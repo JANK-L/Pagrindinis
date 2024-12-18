@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antraščių užduotis</title>
 </head>
+
 <body>
     <h1>Paprastas tekstas</h1>
 
     <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Aperiam amet quae ipsum doloremque nobis quia rerum beatae enim, 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aperiam amet quae ipsum doloremque nobis quia rerum beatae enim,
         reiciendis fugiat fugit ducimus unde illo error eum autem, iure, sequi repellendus.
     </p>
     <p>
@@ -23,15 +25,16 @@
     <h2>Formatuotas tekstas</h2>
 
     <p>
-        <b><u><i>Lorem</i>, ipsum</u> dolor</b> sit <strong>amet</strong> consectetur adipisicing elit. 
+        <b><u><i>Lorem</i>, ipsum</u> dolor</b> sit <strong>amet</strong> consectetur adipisicing elit.
         Fugit voluptates ipsam delectus amet, repellat necessitatibus!
     </p>
     <p>
-        Lorem ipsum dolor sit <sup>amet</sup> consectetur adipisicing elit.<hr> Eligendi 
-        modi provident dolore rerum, inventore <sub>temporibus</sub> id ex <br>fugit est 
+        Lorem ipsum dolor sit <sup>amet</sup> consectetur adipisicing elit.
+        <hr> Eligendi
+        modi provident dolore rerum, inventore <sub>temporibus</sub> id ex <br>fugit est
         voluptatum ea aut tenetur reiciendis. <mark>Dolorem</mark>.
     </p>
-    
+
     <h3>Nuorodos</h3>
 
     <a href="https://www.youtube.com">Youtube</a>
@@ -50,8 +53,10 @@
     </a>
     <br>
 
-    <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funiversemagazine.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fzm4nfgq29yi91-1536x1536-1.jpg&f=1&nofb=1&ipt=4544dff2dfa588bffc9165c48925c04286bd26de7110f92e5eb0c2258902a0c0&ipo=images" target="_blank">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funiversemagazine.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fzm4nfgq29yi91-1536x1536-1.jpg&f=1&nofb=1&ipt=4544dff2dfa588bffc9165c48925c04286bd26de7110f92e5eb0c2258902a0c0&ipo=images" alt="Planetos nuotrauka" width="300">
+    <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funiversemagazine.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fzm4nfgq29yi91-1536x1536-1.jpg&f=1&nofb=1&ipt=4544dff2dfa588bffc9165c48925c04286bd26de7110f92e5eb0c2258902a0c0&ipo=images"
+        target="_blank">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funiversemagazine.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fzm4nfgq29yi91-1536x1536-1.jpg&f=1&nofb=1&ipt=4544dff2dfa588bffc9165c48925c04286bd26de7110f92e5eb0c2258902a0c0&ipo=images"
+            alt="Planetos nuotrauka" width="300">
     </a>
     <br>
 
@@ -217,45 +222,75 @@
             <li>PostgreSQL</li>
             <li>...</li>
         </ul>
-    </ul> <br>
+    </ul>
+    <br>
 
     <form>
         <input type="text" placeholder="Vartotojo vardas"> <br>
         <input type="password" placeholder="Slaptažodis"> <br>
-        <input type="submit"   value="Prisijungti"> <br>
+        <input type="submit" value="Prisijungti"> <br>
 
-    </form> <br>
-
-    <form>
-        <input type="text" placeholder="Jūsų vardas"> <br>
-        <input type="email" placeholder="Jūsų el. pašto adresas"> <br>
-        <input type="text" placeholder="Žinutės tema"> <br>
-        <textarea cols="17" rows="3" placeholder="Žinutė"></textarea> <br>
-        <input type="submit"   value="Siųsti žinutę"> <br>
-    </form> <br>
+    </form>
+    <br>
+    <hr>
 
     <form>
-        <input type="text" placeholder="Vardas"> <br>
-        <input type="email" placeholder="El. pašto adresas"> <br>
-        <input type="email" placeholder="El. pašto adresas dar kartą"> <br>
-        <textarea cols="17" rows="3" placeholder="Aprašymas apie save"></textarea> <br>
-        <input type="radio" name="lytis" value="moteris"> Moteris
-        <input type="radio" name="lytis" value="vyras"> Vyras <br>
-        <input type="submit"   value="Registruotis"> <br>
-
-    </form> <br>
+        <input type="text" placeholder="Jūsų vardas" required> <br>
+        <input type="email" placeholder="Jūsų el. pašto adresas" required> <br>
+        <input type="text" placeholder="Žinutės tema" required> <br>
+        <textarea cols="17" rows="3" placeholder="Žinutė" required></textarea> <br>
+        <input type="submit" value="Siųsti žinutę"> <br>
+    </form>
+    <br>
+    <hr>
 
     <form>
-        <label for="vardasID">Jūsų vardas</label>
+        <input type="text" placeholder="Vardas" style="width: 200px" required> <br>
+        <input type="email" placeholder="El. pašto adresas" style="width: 200px" required> <br>
+        <input type="email" placeholder="El. pašto adresas dar kartą" style="width: 200px" required> <br>
+        <textarea cols="17" rows="3" placeholder="Aprašymas apie save" style="width: 200px ; height: 100px;"
+            required></textarea> <br>
+        <input type="radio" name="lytis" value="moteris" required> Moteris
+        <input type="radio" name="lytis" value="vyras" required> Vyras <br>
+        <input type="submit" value="Registruotis"> <br>
+
+    </form>
+    <br>
+    <hr>
+
+    <form>
+        <label for="vardasID">Jūsų vardas</label> <br>
         <input type="text" id="vardasID"> <br>
-        <label for="elPastasID">Jūsų el. pašto adresas</label>
-        <input type="email" id="elPastasID"> <br>
-        <label for="temaID">Žinutės tema</label>
+        <label>Jūsų el. pašto adresas<br>
+            <input type="email" id="elPastasID"> <br>
+        </label>
+        <label for="temaID">Žinutės tema</label><br>
         <input type="text" id="temaID"> <br>
-        <label for="zinuteID">Žinutė</label>
+        <label for="zinuteID">Žinutė</label><br>
         <textarea cols="17" rows="3" id="zinuteID"></textarea> <br>
-        <input type="submit"   value="Siųsti žinutę"> <br>
-    </form> <br>
+        <input type="submit" value="Siųsti žinutę"> <br>
+    </form>
+    <br>
+    <hr>
+
+    <form>
+        <input type="checkbox" name="paslaugos">plovimas
+        <input type="checkbox" name="paslaugos">valymas
+        <input type="checkbox" name="paslaugos">tvarkymas<br>
+        <input type="range"><br>
+        <input type="date"><br>
+        <input type="file" accept="image/png, image/jpg"><br>
+
+        <select>
+            <option>reikia</option>
+            <option>nereikia</option>
+        </select><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <hr>
+
 
 </body>
+
 </html>
