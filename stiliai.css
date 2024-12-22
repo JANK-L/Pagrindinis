@@ -1,0 +1,43 @@
+body {
+  background-color: #f2e9d8;
+}
+
+h1,
+h2 {
+  color: rgba(0, 0, 0, 0.4);
+}
+.playwrite-es-deco-guides-regular {
+  font-family: "Playwrite ES Deco Guides", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body > table {
+  background-image: url("images/smelis.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0);
+
+  background-blend-mode: lighten;
+  font-family: "Playwrite ES Deco Guides", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.langeliai {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#pirmas-paragrafas mark {
+  color: blueviolet;
+  background: none;
+}
+a {
+  color: rgb(255, 0, 0);
+}
+a:hover {
+  color: #2d383a;
+}
