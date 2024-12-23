@@ -1,0 +1,67 @@
+body {
+  background-color: burlywood;
+}
+
+div {
+  background-color: rgb(212, 94, 94);
+  width: 80%;
+  margin: 5em auto;
+}
+
+#id1 {
+  border: 12px solid blue;
+  box-shadow: 5px 5px 15px black;
+}
+
+#id2 {
+  padding: 5em;
+  border-radius: 150px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+#id3 {
+  padding: 5em 0;
+  border-bottom: 10px solid blueviolet;
+  border-right: 15px dashed green;
+}
+
+#id4 {
+  padding: 0 5em 1em;
+  border-radius: 20px 0 50px;
+}
+
+#id5 {
+  padding: 0 0 5em;
+  border-left: 10px dashed darkorange;
+}
+
+#id6 li {
+  display: inline;
+}
+
+#forma form {
+  background-color: blueviolet;
+  width: 500px;
+  padding: 1em;
+}
+
+#forma input {
+  display: block;
+}
+
+#tekstas p {
+  font-size: 2em;
+}
+
+#tekstas a {
+  font-size: 2em;
+}
+
+#tekstas mark:hover {
+  position: relative;
+  bottom: 10px;
+}
+#tekstas a:hover {
+  position: relative;
+  left: 20px;
+}
