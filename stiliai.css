@@ -1,16 +1,16 @@
 body {
   background-color: #f2e9d8;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 h1,
 h2 {
   color: rgba(0, 0, 0, 0.4);
 }
-.playwrite-es-deco-guides-regular {
-  font-family: "Playwrite ES Deco Guides", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 body > table {
   background-image: url("images/smelis.png");
   background-size: cover;
@@ -18,9 +18,12 @@ body > table {
   background-color: rgba(255, 255, 255, 0);
 
   background-blend-mode: lighten;
-  font-family: "Playwrite ES Deco Guides", serif;
-  font-weight: 400;
-  font-style: normal;
+  text-transform: none;
+  text-align: justify;
+}
+table {
+  text-align: center;
+  font-size: 1.8em;
 }
 
 td {
@@ -34,10 +37,20 @@ td {
 #pirmas-paragrafas mark {
   color: blueviolet;
   background: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 a {
   color: rgb(255, 0, 0);
+  font-weight: 300;
+  text-decoration: none;
 }
 a:hover {
   color: #2d383a;
+}
+
+li {
+  text-transform: lowercase;
 }
