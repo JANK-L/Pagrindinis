@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigacija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <table frame="box" border="1" width="100%" cellspacing="0px" cellpadding="15px">
+
+        <tr>
+            <td colspan="3" class="header" align="center">
+
+                <h1>Navigacija</h1>
+                <nav>
+                    <a href="#">Pradžia</a> |
+                    <a href="#">Apie</a> |
+                    <a href="#">Kontaktai</a> |
+                    <a href="#">Dienoraštis</a>
+                </nav>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <!--Kaire puse-->
+            <td valign="top" width="100">
+                <h2>Prisijungimas</h2>
+                <form>
+                    <label for="vardasID">Vartotojo vardas:</label> <br>
+                    <input type="text" id="vardasID" size="15" required><br>
+                    <label for="passID">Slaptažodis:</label> <br>
+                    <input type="password" id="passID" size="15" required><br><br>
+                    <button type="submit">Prisijungti</button>
+                </form>
+                <hr>
+
+
+                <h2>Naujausios Naujienos</h2>
+                <ul>
+                    <li>Naujiena 1</li>
+                    <li class="raudonas">Naujiena 2</li>
+                    <li>Naujiena 3</li>
+                </ul>
+                <hr>
+
+
+                <h2>Apklausa</h2>
+                <form>
+                    <p>Ar jums patinka mūsų svetainė?</p>
+                    <input type="radio" name="Atsakymas" value="Taip" required> Taip <br>
+                    <input type="radio" name="Atsakymas" value="Ne" required> Ne <br> <br>
+                    <input type="submit" value="Balsuoti">
+                </form>
+            </td>
+
+
+            <!--Viduris-->
+            <td valign="top">
+                <h1>Straipsniai</h1>
+                <h2 class="straipsnis">Straipsnis 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas minus, molestias enim quos
+                    quibusdam.</p>
+                <h2 class="straipsnis">Straipsnis 2</h2>
+                <p>Praesentium tenetur, sed unde dignissimos dolore ut? Culpa eos maiores modi ullam est quisquam velit!
+                </p>
+                <h2 class="straipsnis">Straipsnis 3</h2>
+                <p>Id vitae impedit dolore ullam perspiciatis similique? Possimus quo inventore iusto accusantium
+                    asperiores, deserunt libero!</p>
+
+            </td>
+
+
+            <!--Desine puse-->
+            <td valign="top" width="100">
+                <h2>Populiarūs Įrašai</h2>
+                <ol>
+                    <li>Įrašas 1</li>
+                    <li>Įrašas 2</li>
+                    <li class="raudonas">Įrašas 3</li>
+                </ol>
+                <hr>
+                <h2>Galerija</h2>
+                <img src="../images/smelis.png" alt="Photo_1" width="150"> <br>
+                <img src="../images/smelis.png" alt="Photo_2" width="150">
+
+                <hr>
+                <h2>Prenumerata</h2>
+                <form>
+                    <label for="emailID">El. paštas:</label> <br>
+                    <input type="email" id="emailID" size="15" required><br><br>
+                    <button type="submit">Prenumeruoti</button>
+                </form>
+            </td>
+        </tr>
+
+
+
+        <tr class="footer">
+            <td colspan="3" align="center">
+                <p> &copy; 2024 Mano svetainė. Visos teisės saugomos.</p>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

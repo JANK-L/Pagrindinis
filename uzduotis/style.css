@@ -1,0 +1,27 @@
+body,
+input,
+button {
+  background-color: #f0e58b;
+}
+
+.header,
+.footer {
+  background-color: #ffa400;
+}
+
+h1,
+h2 {
+  color: #767143;
+}
+
+.straipsnis {
+  color: #007d00;
+}
+
+.header > h1 {
+  color: #7f5109;
+}
+
+.raudonas {
+  color: red;
+}
