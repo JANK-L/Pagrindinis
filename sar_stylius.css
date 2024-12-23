@@ -1,0 +1,24 @@
+ul > li {
+  list-style: square;
+}
+ol > li {
+  list-style: upper-roman;
+}
+
+.sarasas > li {
+  list-style-type: none;
+}
+
+.sarasas > li::before {
+  content: "\2181"" ";
+  border-bottom: 2px solid silver;
+}
+
+.sarasas2 {
+  list-style-type: none;
+}
+
+.sarasas2::before {
+  content: "\2111"" ";
+  border-bottom: 2px solid silver;
+}

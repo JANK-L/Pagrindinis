@@ -54,3 +54,15 @@ a:hover {
 li {
   text-transform: lowercase;
 }
+img {
+  width: 150px;
+  /*height: 200px;*/
+}
+
+ul li::before {
+  content: "\2115"" ";
+  color: blueviolet;
+}
+ul {
+  list-style-type: none;
+}
