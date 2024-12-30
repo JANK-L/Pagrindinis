@@ -12,6 +12,14 @@ body {
   font-family: Arial;
 }
 
+header #info {
+  position: absolute;
+  left: vw;
+  bottom: 50px;
+  margin: 0;
+  background: none;
+}
+
 header {
   background-image: url(images/smelis.png);
   background-size: cover;
@@ -20,7 +28,7 @@ header {
   position: relative;
 }
 
-h1 {
+header #info h1 {
   margin: 0;
   display: inline-block;
   font-size: 3em;
@@ -30,7 +38,7 @@ h1 {
   color: brown;
 }
 
-p {
+header #info p {
   background-color: blueviolet;
   color: white;
   font-size: 1.5em;
@@ -92,10 +100,7 @@ div:not(#virsus-blokas, #info) {
   display: block;
 }
 
-#tekstas p {
-  font-size: 2em;
-}
-
+#tekstas p,
 #tekstas a {
   font-size: 2em;
 }
