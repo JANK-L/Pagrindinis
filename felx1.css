@@ -1,0 +1,47 @@
+body,
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  padding: 15px;
+}
+
+.geltonas {
+  background-color: rgb(255, 166, 0);
+}
+
+.orandzinis {
+  background-color: rgb(255, 81, 0);
+}
+
+.antras p {
+  background-color: white;
+  height: 100px;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.trecias {
+  padding: 16px;
+
+  justify-content: center;
+}
+.trecias p {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 16px;
+  margin: 0px;
+  width: 300px;
+}
+.ketvirtas {
+  justify-content: space-around;
+}
+.ketvirtas p {
+  width: 200px;
+  box-sizing: border-box;
+  background-color: rgb(255, 166, 0);
+  padding: 16px;
+}

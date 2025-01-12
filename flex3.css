@@ -1,0 +1,75 @@
+body,
+header,
+.preheader,
+.straipsniai,
+.prefooter,
+footer {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+header {
+  background-color: bisque;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  padding-left: 15px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav > a {
+  padding-right: 15px;
+}
+
+.preheader {
+  background-color: rgb(162, 92, 253);
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.preheader p {
+  width: 80%;
+}
+
+.straipsniai {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.straipsnis {
+  margin: 20px 0px;
+  padding: 15px;
+  width: calc(100% / 3 - 75px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.prefooter {
+  background-color: rgb(162, 92, 253);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: bisque;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
