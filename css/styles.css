@@ -1,0 +1,331 @@
+body {
+  background: #fffcf9;
+}
+
+.container {
+  width: 1224px;
+}
+
+nav {
+  height: 108px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+}
+
+nav .btn {
+  text-align: center;
+
+  width: 127px;
+  height: 44px;
+
+  background: #ff6978;
+  border-radius: 14px;
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+nav .btn:hover {
+  text-align: center;
+
+  width: 127px;
+  height: 44px;
+
+  background: #ff6978;
+  border-radius: 14px;
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.sec1 {
+  position: relative;
+  margin-top: 46px;
+  border-radius: 25px;
+  background: #ffeee2;
+}
+
+.sec2 {
+  position: relative;
+  margin-top: 58px;
+}
+
+.sec3 {
+  position: relative;
+  margin-top: 32px;
+}
+.sec4 {
+  position: relative;
+  margin-top: 128px;
+}
+
+.sec1 img,
+.sec1 .col-8 {
+  width: 702px;
+  height: 485px;
+  border-radius: 25px 0 0 25px;
+}
+
+.sec1 .col-4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+.sec1 h1,
+.sec2 h1,
+.sec3 h1 {
+  width: 392px;
+  height: 114px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  color: #1f1f1f;
+}
+
+.sec1 p,
+.sec2 p,
+.sec3 p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  width: 420px;
+  line-height: 28px;
+
+  color: #1f1f1f;
+}
+
+.sec1 .btn,
+.sec2 .btn,
+.sec3 .btn {
+  width: 153px;
+  height: 44px;
+
+  background: #ff6978;
+  border-radius: 14px;
+
+  /* Registruokis */
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.sec2 img,
+.sec3 img {
+  margin: 0;
+  width: 637px;
+  height: 404px;
+}
+
+.sec2 .col-5,
+.sec3 .col-5 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 90px;
+  padding: 0px;
+}
+
+.sec2 .col-6 {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sec4 h1 {
+  width: 863px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+
+  color: #1f1f1f;
+  margin-bottom: 42px;
+}
+
+.sec4 h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #1f1f1f;
+}
+
+.sec4 p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #1f1f1f;
+}
+
+.sec5 {
+  margin-top: 64px;
+  height: 659px;
+  background-color: #ffeee2;
+}
+.sec5 h1 {
+  /* Words from Our Satisfied Customers */
+  margin-top: 61px;
+  width: 702px;
+  height: 108px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+  /* or 54px */
+
+  color: #1f1f1f;
+}
+
+.sec5 h2 {
+  width: 392px;
+  height: 36px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height, or 112% */
+  text-align: center;
+
+  color: #1f1f1f;
+}
+
+.sec5 p {
+  /* Sed semper ante non lacus lacinia tempor. Nulla facilisi. Cras at dignissim diam, eu vehicula magna. */
+
+  width: 420px;
+  height: 56px;
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  text-align: center;
+
+  color: #1f1f1f;
+}
+.sec5 .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec5 .blokas {
+  width: 600px;
+  height: 391px;
+  padding: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
+
+  border-radius: 30px;
+}
+
+.sec5 .col-6 {
+  width: 600px;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  /* Rectangle 6 */
+
+  box-sizing: border-box;
+}
+
+.sec6 h1 {
+  width: 1092px;
+  height: 54px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 120%;
+
+  color: #1f1f1f;
+}
+
+.sec6 h5 {
+  width: 288px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+
+  color: #1f1f1f;
+}
+
+.sec6 p {
+  width: 288px;
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #1f1f1f;
+}
+
+footer {
+  height: 372px;
+
+  background: #ff6978;
+}
+
+footer .col-12 {
+  display: flex;
+  justify-content: center;
+}
+footer .col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
