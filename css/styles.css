@@ -147,14 +147,14 @@
   color: #222222;
 }
 
-#atlikejai .atlikejas {
-  min-width: 238px;
-  height: 354px;
+.atlikejas {
+  width: 238px;
+  min-height: 354px;
 }
 #atlikejai p {
   margin: 0;
 }
-.atlikejas > p:nth-child(2) {
+.atlikejas div > :first-child {
   width: 92px;
   height: 28px;
 
@@ -169,7 +169,7 @@
 
   color: #222222;
 }
-.atlikejas p:last-child {
+.atlikejas div > :last-child {
   width: 206px;
   height: 44px;
 
