@@ -311,6 +311,10 @@ button {
 }
 
 /*Sect4 css dalis*/
+.sect4 {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
 
 .sect4 .categories .category {
   display: flex;
@@ -323,8 +327,8 @@ button {
 
   background: #3b3b3b;
   border-radius: 20px;
+  margin-top: 60px;
 }
-
 .sect4 .categories .category h1 {
   font-size: 22px;
   line-height: 140%;
@@ -335,7 +339,6 @@ button {
   margin: 20px 0 0 30px;
   align-self: flex-start;
 }
-
 .sect4 .categories {
   display: flex;
   gap: 30px;
@@ -367,8 +370,54 @@ button {
   background-position: center;
   background-size: cover;
 
+  margin-bottom: 80px;
   /* NFT Info */
 }
 
 /*Sect6 css dalis*/
+.sec6 .cards {
+  display: flex;
+}
+
+.sect6 .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px 30px;
+  width: 330px;
+  height: 439px;
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.sect6 .cards .card h1 {
+  width: 270px;
+  height: 31px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  margin: 20px 0 10px;
+}
+
+.sect6 .cards .card p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+
+  color: #ffffff;
+  margin: 0;
+}
 /*Sect7 css dalis*/
