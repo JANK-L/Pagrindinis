@@ -1,0 +1,374 @@
+body {
+  background-color: #2b2b2b;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/*atsikartojantis*/
+.img-name img {
+  border-radius: 120px;
+  width: 24px;
+  height: 24px;
+}
+.img-name {
+  display: flex;
+  gap: 12px;
+}
+.img-name p {
+  font-size: 16px;
+  line-height: 140%;
+}
+h1 {
+  height: 46px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 12px;
+  height: 60px;
+
+  /* Call to Action */
+  background: #a259ff;
+  border-radius: 20px;
+  border: none;
+}
+
+/*Sect1 css dalis*/
+
+.sect1 {
+  display: flex;
+
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.sect1 .left-side h1 {
+  width: 510px;
+  height: 222px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  margin: 0;
+}
+.sect1 .left-side > p {
+  width: 510px;
+  height: 105px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  align-self: stretch;
+  margin: 20px 0 30px;
+}
+.sect1 .left-side .numbers {
+  display: flex;
+  gap: 30px;
+}
+.sect1 .left-side .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 150px;
+  height: 77px;
+
+  border-radius: 20px;
+}
+.sect1 .left-side .numbers {
+  margin-top: 30px;
+}
+.sect1 .left-side .numbers .info p:first-child {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  align-self: stretch;
+  margin: 0;
+}
+.sect1 .left-side .numbers .info p:nth-child(2) {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.99px;
+  line-height: 160%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  align-self: stretch;
+  margin: 0;
+}
+.sect1 .right-side .image-wrapper img {
+  width: 510px;
+  height: 401px;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0px 0px;
+}
+.sect1 .right-side .avatar-text {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  gap: 10px;
+
+  width: 510px;
+  height: 109px;
+
+  background: #3b3b3b;
+  border-radius: 0px 0px 20px 20px;
+
+  align-self: stretch;
+}
+.sect1 .right-side .avatar-text h2 {
+  width: 470px;
+  height: 31px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+/*Sect2 css dalis*/
+
+.sect2 {
+  padding-top: 80px;
+}
+.sect2 .nfts {
+  margin-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  gap: 30px;
+}
+.sect2 .nfts .nft-avatar > img {
+  width: 330px;
+  height: 330px;
+
+  border-radius: 20px;
+}
+.sect2 .nfts .nft-avatar h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+/*Sect3 css dalis*/
+
+.sect3 .top-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.sect3 .top-side .left-side * {
+  margin: 0;
+}
+.sect3 .top-side .left-side h1 {
+  margin-bottom: 10px;
+}
+.sect3 .creators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+.sect3 .creators .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 240px;
+  height: 238px;
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+.sect3 .creators .box .number {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  top: 18px;
+
+  background: #2b2b2b;
+  border-radius: 20px;
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #858584;
+}
+.sect3 .box img {
+  margin: 20px 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+}
+.sect3 .creators .box h1 {
+  font-size: 22px;
+  line-height: 140%;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  margin: 0;
+}
+.sect3 .sales-price {
+  display: flex;
+  gap: 10px;
+}
+.sect3 .sales-price p:first-child {
+  font-size: 16px;
+  line-height: 140%;
+
+  text-align: right;
+
+  color: #858584;
+  margin: 0;
+}
+.sect3 .sales-price p:nth-child(2) {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #ffffff;
+  margin: 0;
+}
+
+/*Sect4 css dalis*/
+
+.sect4 .categories .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 240px;
+  height: 316px;
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.sect4 .categories .category h1 {
+  font-size: 22px;
+  line-height: 140%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+  margin: 20px 0 0 30px;
+  align-self: flex-start;
+}
+
+.sect4 .categories {
+  display: flex;
+  gap: 30px;
+}
+.sect4 .categories .category .image-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/nft1.png);
+  height: 240px;
+  width: 100%;
+  background-size: cover;
+
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden !important;
+}
+
+/*Sect5 css dalis*/
+
+.sect5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(162, 89, 255, 0) 0%,
+      #a259ff 100%
+    ),
+    url(/images/image_bg1.png);
+  height: 630px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* NFT Info */
+}
+
+/*Sect6 css dalis*/
+/*Sect7 css dalis*/
