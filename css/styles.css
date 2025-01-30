@@ -1,7 +1,49 @@
 body {
   background-color: #2b2b2b;
-  max-width: 1280px;
-  margin: auto;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+form #InputEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 0px 16px 20px;
+
+  width: 425px;
+  height: 60px;
+
+  background: #ffffff;
+  border-radius: 20px;
+}
+form button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+
+  height: 60px;
+
+  background: #a259ff;
+  border-radius: 20px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+
+  text-align: center;
+
+  color: #ffffff;
 }
 
 /*atsikartojantis*/
@@ -347,7 +389,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/nft1.png);
+  background-image: url(/images/c1_img.png);
   height: 240px;
   width: 100%;
   background-size: cover;
@@ -355,7 +397,15 @@ button {
   border-radius: 20px 20px 0px 0px;
   overflow: hidden !important;
 }
-
+.sect4 .categories .category:nth-child(2) > .image-wraper {
+  background-image: url(/images/c2_img.png);
+}
+.sect4 .categories .category:nth-child(3) > .image-wraper {
+  background-image: url(/images/c3_img.png);
+}
+.sect4 .categories .category:nth-child(4) > .image-wraper {
+  background-image: url(/images/c4_img.png);
+}
 /*Sect5 css dalis*/
 
 .sect5 {
@@ -375,8 +425,12 @@ button {
 }
 
 /*Sect6 css dalis*/
-.sec6 .cards {
+.sect6 {
+  padding-bottom: 80px;
+}
+.sect6 .cards {
   display: flex;
+  gap: 30px;
 }
 
 .sect6 .cards .card {
@@ -421,3 +475,398 @@ button {
   margin: 0;
 }
 /*Sect7 css dalis*/
+.sect7 h1 {
+  height: 92px;
+  margin-bottom: 10px;
+}
+.sect7 p {
+  margin-bottom: 40px;
+}
+.sect7 .mailing {
+  margin: 40px 0 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+  gap: 80px;
+
+  height: 430px;
+
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+.sect7 img {
+  width: 425px;
+  height: 310px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+.sect7 .subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 425px;
+  height: 272px;
+}
+
+footer {
+  background-color: #3b3b3b;
+}
+footer .info {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+footer .container .info {
+  display: flex;
+  align-items: flex-start;
+}
+footer .container > p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+
+  color: #cccccc;
+  padding-bottom: 40px;
+  margin: 0;
+}
+footer h1 {
+  margin-bottom: 25px;
+  height: 37px;
+}
+footer .info > * {
+  display: flex;
+  flex-direction: column;
+}
+
+footer svg {
+  margin-bottom: 30px;
+}
+footer h1 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+footer hr {
+  border: 1px solid #858584;
+}
+footer .info p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+footer .left-side {
+  width: 327px;
+}
+footer .left-side p {
+  width: 238px;
+}
+footer .right-side {
+  width: 420px;
+  height: 184px;
+}
+footer .right-side p {
+  width: 330px;
+}
+
+/*marketplace*/
+.search {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.search h1 {
+  margin-bottom: 10px;
+}
+.search input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 45px;
+  gap: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: #2b2b2b;
+
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #858584;
+
+  margin-top: 30px;
+}
+.nft-cards .container {
+  background-color: #3b3b3b;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.nft-card {
+  width: 330px;
+  height: 469px;
+
+  /* Background */
+  background: #2b2b2b;
+  border-radius: 20px;
+}
+.nft-card > img {
+  width: 330px;
+  height: 295px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0px 0px;
+}
+.nft-cards .artist img {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 120px;
+}
+.artist {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.artist p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #ffffff;
+
+  margin: 0;
+}
+.nft-cards .info,
+.nft-cards .prices {
+  padding: 0 30px;
+}
+.nft-cards .info {
+  margin-top: 20px;
+}
+h5 {
+  width: 270px;
+  height: 31px;
+
+  /* H5 - Work Sans */
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  /* identical to box height, or 31px */
+  text-transform: capitalize;
+
+  /* White */
+  color: #ffffff;
+}
+.nft-cards .text {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-cards .text p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+
+  color: #858584;
+}
+
+.nft-cards .price {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-cards .price p {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: right;
+
+  color: #ffffff;
+}
+
+/*pritaikimas kitiems ekrano dydziams*/
+
+@media screen and (max-width: 834px) {
+  .sect2 .nfts :nth-child(3) {
+    display: none;
+  }
+  .sect3 .creators :nth-child(7),
+  .sect3 .creators :nth-child(8) {
+    display: none;
+  }
+  .sect3 .creators .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+
+    width: 330px;
+    height: 100px;
+
+    border-radius: 20px;
+  }
+  .sect7 form {
+    display: flex;
+  }
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /*marketplace*/
+  .search h1 {
+    /* H3 - Work Sans */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    /* identical to box height, or 46px */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    /* White */
+    color: #ffffff;
+  }
+  .search p {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    /* White */
+    color: #ffffff;
+  }
+  .search {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .nft-card {
+    /* NFT Card */
+
+    width: 325px;
+
+    height: 469px;
+  }
+  .nft-card > img {
+    width: 325px;
+    height: 295px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sect2 .nfts :nth-child(2) {
+    display: none;
+  }
+  .sect3 .creators :nth-child(6) {
+    display: none;
+  }
+
+  footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 315px;
+    height: 108px;
+  }
+  footer form button {
+    width: 100%;
+  }
+
+  .search h1 {
+    max-height: 39px;
+
+    /* H4 - Work Sans */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    /* or 39px */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    /* White */
+    color: #ffffff;
+  }
+  .search {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .nft-card {
+    /* NFT Card */
+
+    width: 315px;
+
+    height: 402px;
+  }
+  .nft-card > img {
+    width: 315px;
+    height: 238px;
+  }
+
+  .nft-cards .price p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  .nft-cards .info,
+  .nft-cards .prices {
+    padding: 0 25px;
+  }
+
+  .nft-cards .nft-card:last-child {
+    display: none;
+  }
+  .nft-cards .nft-card:nth-child(5) {
+    display: none;
+  }
+}
