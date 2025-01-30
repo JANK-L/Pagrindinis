@@ -1,7 +1,19 @@
 body {
   background-color: #2b2b2b;
+
   padding: 0;
-  margin: 0;
+}
+nav {
+  margin-top: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.navbar-toggler {
+  background-color: white;
+}
+
+.container {
+  max-width: 1080px;
 }
 
 form {
@@ -44,6 +56,28 @@ form button {
   text-align: center;
 
   color: #ffffff;
+}
+.nav-link,
+.nav-item button,
+.sect1 button {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.navbar-nav .nav-item {
+  display: flex;
+  padding: 0 25px;
+  align-items: center;
+}
+.navbar-nav .nav-item:last-child {
+  padding: 0;
 }
 
 /*atsikartojantis*/
@@ -103,7 +137,7 @@ button {
 
 .sect1 {
   display: flex;
-
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 80px;
 }
@@ -393,6 +427,7 @@ button {
   height: 240px;
   width: 100%;
   background-size: cover;
+  position: relative;
 
   border-radius: 20px 20px 0px 0px;
   overflow: hidden !important;
@@ -406,6 +441,17 @@ button {
 .sect4 .categories .category:nth-child(4) > .image-wraper {
   background-image: url(/images/c4_img.png);
 }
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(7.5px);
+}
+.image-wraper svg {
+  position: relative;
+  z-index: 2;
+}
+
 /*Sect5 css dalis*/
 
 .sect5 {
@@ -422,6 +468,77 @@ button {
 
   margin-bottom: 80px;
   /* NFT Info */
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 10px;
+
+  width: 295px;
+  height: 147px;
+
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+
+  border-radius: 20px;
+}
+.timer > p {
+  /* Auction ends in: */
+
+  width: 235px;
+  height: 13px;
+
+  /* Caption - Space Mono */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  /* Text */
+  color: #ffffff;
+}
+.time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.timer .time h3 {
+  /* 59 */
+
+  /* H3 - Space Mono */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+  /* identical to box height, or 46px */
+  text-transform: capitalize;
+
+  /* Text */
+  color: #ffffff;
+}
+.time2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.time2 p {
+  /* Caption - Space Mono */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  /* Text */
+  color: #ffffff;
 }
 
 /*Sect6 css dalis*/
@@ -723,13 +840,49 @@ h5 {
 /*pritaikimas kitiems ekrano dydziams*/
 
 @media screen and (max-width: 834px) {
-  .sect2 .nfts :nth-child(3) {
+  .sect1 .left-side h1 {
+    /* Discover digital art & Collect NFTs */
+
+    width: 330px;
+    height: 138px;
+
+    /* H3 - Work Sans */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    /* or 46px */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    /* White */
+    color: #ffffff;
+  }
+  .sect1 .left-side > p {
+    /* NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists. */
+
+    width: 330px;
+    height: 66px;
+
+    /* Base(Body) - Work Sans */
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #ffffff;
+  }
+  .sect2 .nfts > :nth-child(3) {
     display: none;
   }
   .sect3 .creators :nth-child(7),
   .sect3 .creators :nth-child(8) {
     display: none;
   }
+
   .sect3 .creators .box {
     display: flex;
     flex-direction: row;
