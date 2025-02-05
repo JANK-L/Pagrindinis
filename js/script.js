@@ -73,7 +73,7 @@ console.log(
 */
 
 // 4/5
-
+/*
 // 6.
 const pavadinimas = "šuo";
 const kailioSpalva = "rudą";
@@ -92,3 +92,12 @@ console.log(`${skaičius}${skaičius}${skaičius}${skaičius}${skaičius}`);
 
 let skaičius2 = 36;
 console.log(skaičius2, skaičius2, skaičius2, skaičius2, skaičius2);
+
+*/
+
+// 5/5
+
+let simbolis = "*";
+console.log(`${simbolis}${simbolis}${simbolis}${simbolis}
+${simbolis}  ${simbolis}
+${simbolis}${simbolis}${simbolis}${simbolis}`);
