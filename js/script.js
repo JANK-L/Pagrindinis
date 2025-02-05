@@ -98,6 +98,6 @@ console.log(skaičius2, skaičius2, skaičius2, skaičius2, skaičius2);
 // 5/5
 
 let simbolis = "*";
-console.log(`${simbolis}${simbolis}${simbolis}${simbolis}
-${simbolis}  ${simbolis}
-${simbolis}${simbolis}${simbolis}${simbolis}`);
+console.log(`${simbolis} ${simbolis} ${simbolis}
+${simbolis}   ${simbolis}
+${simbolis} ${simbolis} ${simbolis}`);
