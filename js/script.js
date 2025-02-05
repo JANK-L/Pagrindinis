@@ -49,7 +49,7 @@ Gyventojų skaičius : ${gyventojuSkaicius}`
 // 3/5
 
 // 3.
-
+/*
 let vardas = "Vardenis";
 
 console.log(`Mano vardas yra ${vardas}.`);
@@ -70,3 +70,25 @@ let kintamasis = "Žodis";
 console.log(
   `${kintamasis}${kintamasis}${kintamasis}${kintamasis}${kintamasis}`
 );
+*/
+
+// 4/5
+
+// 6.
+const pavadinimas = "šuo";
+const kailioSpalva = "rudą";
+let svoris = 1.4;
+
+console.log(
+  `Gyvūnas - ${pavadinimas} turi ${kailioSpalva} kailio spalvą ir sveria ${svoris} kg.`
+);
+
+// 7.
+
+let skaičius = 25;
+console.log(`${skaičius}${skaičius}${skaičius}${skaičius}${skaičius}`);
+
+// 8.
+
+let skaičius2 = 36;
+console.log(skaičius2, skaičius2, skaičius2, skaičius2, skaičius2);
