@@ -28,7 +28,7 @@ Atsiskaityti kreditai : ${atsiskaitytuKredituSkaicius}`
 // 2/5
 const pavadinimas = "Panevėžys";
 const valstybe = "Lietuva";
-const apskritis = "Panevezio aps.";
+const apskritis = "Panevežio aps.";
 const ikurimoData = 1503;
 let meras = "Rytis Mykolas Račkauskas";
 const plotas = 50.1;
