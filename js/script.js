@@ -108,7 +108,7 @@ ${simbolis} ${simbolis} ${simbolis}`);
 // 1/3
 
 // 1.
-
+/*
 let skaičius = 3;
 
 console.log(skaičius);
@@ -147,3 +147,23 @@ let k4 = -20;
 
 let vidurkis = (k1 + k2 + k3 + k4) / 4;
 console.log("vidurkis:", vidurkis);
+*/
+
+// 2/3
+
+// 5.
+
+let a = 3;
+let b = 7;
+
+console.log(a, "+", b, "=", a + b);
+console.log(a, "-", b, "=", a - b);
+console.log(a, "*", b, "=", a * b);
+console.log(a, "/", b, "=", a / b);
+
+// 6.
+
+console.log(-1 + 4 * 6);
+console.log((35 + 5) % 7);
+console.log(14 + (-4 * 6) / 12);
+console.log(2 + (15 / 6) * 1 - (7 % 2));
