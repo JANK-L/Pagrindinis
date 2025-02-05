@@ -1,5 +1,5 @@
 // 1/5
-
+/*
 const vardas = "Vardenis";
 const pavarde = "Pavardenis";
 let amzius = 21;
@@ -22,4 +22,24 @@ Grupė                 : ${akademinesGrupesPavadinimas}
 kursas                : ${kursas}
 Studijų grupė         : ${studijuProgramosPavadinimas}
 Atsiskaityti kreditai : ${atsiskaitytuKredituSkaicius}`
+);
+*/
+
+// 2/5
+const pavadinimas = "Panevėžys";
+const valstybe = "Lietuva";
+const apskritis = "Panevezio aps.";
+const ikurimoData = 1503;
+let meras = "Rytis Mykolas Račkauskas";
+const plotas = 50.1;
+let gyventojuSkaicius = 87913;
+
+console.log(
+  `Pavadinimas        : ${pavadinimas}
+Valstybė           : ${valstybe}
+Apskritis          : ${apskritis}
+Įkūrimo data       : ${ikurimoData} m.
+Meras              : ${meras}
+Plotas             : ${plotas} km^2
+Gyventojų skaičius : ${gyventojuSkaicius}`
 );
