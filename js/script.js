@@ -150,7 +150,7 @@ console.log("vidurkis:", vidurkis);
 */
 
 // 2/3
-
+/*
 // 5.
 
 let a = 3;
@@ -167,3 +167,22 @@ console.log(-1 + 4 * 6);
 console.log((35 + 5) % 7);
 console.log(14 + (-4 * 6) / 12);
 console.log(2 + (15 / 6) * 1 - (7 % 2));
+*/
+
+// 3/3
+
+// 7.
+
+let x = 3;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(x, "*", i, "=", x * i);
+}
+
+// 8.
+
+let y = 45;
+
+let y1 = Math.floor(y / 10);
+let y2 = y % 10;
+console.log(y, "->", y1, "+", y2, "=", y1 + y2);
