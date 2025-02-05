@@ -189,7 +189,7 @@ console.log(y, "->", y1, "+", y2, "=", y1 + y2);
 */
 
 // 05 - salygos
-
+/*
 // 1/2
 
 // 1.
@@ -228,4 +228,48 @@ if (b % 4 == 0) {
 }
 if (c % 8 == 0) {
   console.log("Trečias skaičius dalinasi iš 8");
+}
+*/
+
+// 2/2
+
+// 2.
+let amzius = 40;
+
+if (amzius >= 18) {
+  console.log("jūs galite balsuoti");
+}
+
+// 3.
+
+let pazimys1 = 6;
+let pazimys2 = 1;
+let pazimys3 = 10;
+let pazimys4 = 3;
+let pazimys5 = 9;
+
+let vidurkis = pazimys1 + pazimys2 + pazimys3 + pazimys4 + pazimys5;
+vidurkis /= 5;
+
+if (vidurkis >= 5) {
+  console.log("vidurkis teigiamas");
+}
+
+// 4.
+
+let x = 30;
+
+if (x % 5 == 0) {
+  for (let i = 1; i <= 5; i++) {
+    console.log(x, "*", i, "=", x * i);
+  }
+}
+
+if (x % 2 == 0) {
+  console.log(x, ";", x * x, ";", x / 2);
+}
+
+if (x % 7 != 0) {
+  let y = 7;
+  console.log(x + y, ";", x - y, ";", x * y, ";", x / y);
 }
