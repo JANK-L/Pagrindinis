@@ -96,8 +96,54 @@ console.log(skaičius2, skaičius2, skaičius2, skaičius2, skaičius2);
 */
 
 // 5/5
-
+/*
 let simbolis = "*";
 console.log(`${simbolis} ${simbolis} ${simbolis}
 ${simbolis}   ${simbolis}
 ${simbolis} ${simbolis} ${simbolis}`);
+*/
+
+// 04. Aritmetiniai veiksmai
+
+// 1/3
+
+// 1.
+
+let skaičius = 3;
+
+console.log(skaičius);
+console.log(skaičius ** 2);
+console.log(skaičius ** 3);
+
+// 2.
+
+let a = 3;
+let b = 5;
+let c = 8;
+
+console.log("suma:", a + b + c);
+console.log("sandauga:", a * b * c, "\n");
+
+// 3.
+
+let x = 33;
+let y = 4;
+
+let suma = x + y;
+console.log(suma);
+
+let skirtumas = x - y;
+console.log(skirtumas);
+
+console.log(suma * skirtumas);
+console.log(suma / skirtumas, "\n");
+
+// 4.
+
+let k1 = 40;
+let k2 = 33;
+let k3 = 0;
+let k4 = -20;
+
+let vidurkis = (k1 + k2 + k3 + k4) / 4;
+console.log("vidurkis:", vidurkis);
