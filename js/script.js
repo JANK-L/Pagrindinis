@@ -26,6 +26,7 @@ Atsiskaityti kreditai : ${atsiskaitytuKredituSkaicius}`
 */
 
 // 2/5
+/*
 const pavadinimas = "Panevėžys";
 const valstybe = "Lietuva";
 const apskritis = "Panevežio aps.";
@@ -42,4 +43,30 @@ Apskritis          : ${apskritis}
 Meras              : ${meras}
 Plotas             : ${plotas} km^2
 Gyventojų skaičius : ${gyventojuSkaicius}`
+);
+*/
+
+// 3/5
+
+// 3.
+
+let vardas = "Vardenis";
+
+console.log(`Mano vardas yra ${vardas}.`);
+
+// 4.
+
+const akademineGrupe = "ifzm-6";
+let vidurkis = 8;
+
+console.log(
+  `Akademinė grupė : ${akademineGrupe}
+Vidurkis        : ${vidurkis}`
+);
+
+// 5.
+
+let kintamasis = "Žodis";
+console.log(
+  `${kintamasis}${kintamasis}${kintamasis}${kintamasis}${kintamasis}`
 );
