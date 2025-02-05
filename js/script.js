@@ -170,7 +170,7 @@ console.log(2 + (15 / 6) * 1 - (7 % 2));
 */
 
 // 3/3
-
+/*
 // 7.
 
 let x = 3;
@@ -186,3 +186,46 @@ let y = 45;
 let y1 = Math.floor(y / 10);
 let y2 = y % 10;
 console.log(y, "->", y1, "+", y2, "=", y1 + y2);
+*/
+
+// 05 - salygos
+
+// 1/2
+
+// 1.
+let a = 3;
+let b = 32;
+let c = 32;
+
+if (a == b) {
+  console.log("Pirmas ir antras skaičius yra lygus.");
+}
+if (c == b) {
+  console.log("Antras ir trečias skaičius yra lygus.");
+}
+if (a > b) {
+  console.log("Pirmas skaičius yra didesnis už antrąjį");
+}
+if (b > c * 2) {
+  console.log(
+    "Antras skaičius yra didesnis už dvigubą trečiojo skaičiaus reikšmę"
+  );
+}
+if (a % 2 == 0) {
+  console.log("Pirmas skaičius yra lyginis");
+}
+if (b % 2 != 0) {
+  console.log("Antras skaičius yra nelyginis");
+}
+if (c > 0) {
+  console.log("Trečias skaičius yra teigiamas");
+}
+if (a < 0) {
+  console.log("Pirmas skaičius yra neigiamas");
+}
+if (b % 4 == 0) {
+  console.log("Antras skaičius dalinasi iš 4");
+}
+if (c % 8 == 0) {
+  console.log("Trečias skaičius dalinasi iš 8");
+}
