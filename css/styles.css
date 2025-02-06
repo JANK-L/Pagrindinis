@@ -1,0 +1,16 @@
+.figura {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+#didelis {
+  width: 200px;
+  height: 200px;
+}
+#apskritimas {
+  border-radius: 50%;
+}
+#netoks {
+  width: 150px;
+}
