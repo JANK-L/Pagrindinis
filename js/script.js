@@ -446,7 +446,7 @@ if (paz1 < 0 || paz1 > 10 || paz2 < 0 || paz2 > 10 || paz3 < 0 || paz3 > 10) {
 } else {
   console.log("<5");
 }
-*/
+
 // 15.
 
 let j = 20;
@@ -465,7 +465,7 @@ if (i > j && i < 100) {
     "antras skaičius yra didesnis už pirmąjį ir yra mažesnis už 100;"
   );
 }
-
+*/
 // figuros
 
 const figuros = document.querySelectorAll(".figura");
