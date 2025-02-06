@@ -432,30 +432,21 @@ if (x < y && x < z) {
 
 // 14.
 
-let paz1 = 5;
-let paz2 = 10;
+let paz1 = 10;
+let paz2 = 3;
 let paz3 = 9;
 let vidurkis = (paz1 + paz2 + paz3) / 3;
 
-if (
-  vidurkis < 0 ||
-  vidurkis > 10 ||
-  paz1 < 0 ||
-  paz1 > 10 ||
-  paz2 < 0 ||
-  paz2 > 10 ||
-  paz3 < 0 ||
-  paz3 > 10
-) {
+if (paz1 < 0 || paz1 > 10 || paz2 < 0 || paz2 > 10 || paz3 < 0 || paz3 > 10) {
   console.log("klaida");
-} else if (vidurkis > 7) {
+} else if (vidurkis > 7 && vidurkis <= 10) {
   console.log("[8-10)");
-} else if (vidurkis > 4) {
+} else if (vidurkis > 4 && vidurkis < 8) {
   console.log("[5-8)");
 } else {
   console.log("<5");
 }
-
+*/
 // 15.
 
 let j = 20;
@@ -475,11 +466,7 @@ if (i > j && i < 100) {
   );
 }
 
-false;
-true;
-false;
-true;
-*/
+// figuros
 
 const figuros = document.querySelectorAll(".figura");
 
