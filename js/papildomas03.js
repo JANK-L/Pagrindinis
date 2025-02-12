@@ -82,7 +82,7 @@ console.log(ans);
 */
 
 // 03.
-/**/
+/*
 
 let krastine1 = 10;
 let krastine2 = krastine1;
@@ -95,3 +95,4 @@ for (let i = 0; i < krastine1; i++) {
   }
   console.log(eile);
 }
+*/

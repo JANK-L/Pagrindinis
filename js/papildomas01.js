@@ -10,20 +10,22 @@ console.log(
     dabartiniaiMetai - gimimoMetai
   } metai(-ų)`
 );
+*/
 
 // 02.
-
+/*
 let a = Math.floor(Math.random() * 5);
 let b = Math.floor(Math.random() * 5);
 
 if (a > b) {
-  console.log((a / b).toFixed(2));
+  console.log("a =", a, "b =", b, (a / b).toFixed(2));
 } else {
-  console.log((b / a).toFixed(2));
+  console.log("a =", a, "b =", b,(b / a).toFixed(2));
 }
+*/
 
 // 03.
-
+/*
 let kint1 = Math.floor(Math.random() * 25);
 let kint2 = Math.floor(Math.random() * 25);
 let kint3 = Math.floor(Math.random() * 25);
@@ -45,9 +47,10 @@ if ((kint1 > kint2 && kint2 > kint3) || (kint1 < kint2 && kint2 < kint3)) {
 }
 
 console.log(kint1, kint2, kint3);
+*/
 
 // 04.
-
+/*
 let kr1 = Math.floor(Math.random() * 10) + 1;
 let kr2 = Math.floor(Math.random() * 10) + 1;
 let kr3 = Math.floor(Math.random() * 10) + 1;
@@ -57,9 +60,10 @@ if (kr1 + kr2 > kr3 && kr1 + kr3 > kr2 && kr3 + kr2 > kr1) {
 } else {
   console.log(`Negalima padaryti trikampi (${kr1} ${kr2} ${kr3})`);
 }
+*/
 
 // 05.
-
+/*
 let k1 = Math.floor(Math.random() * 3);
 let k2 = Math.floor(Math.random() * 3);
 let k3 = Math.floor(Math.random() * 3);
@@ -97,9 +101,10 @@ console.log("kintamieji:", k1, k2, k3, k4);
 console.log("Nuliai: ", nulis);
 console.log("Vienatai:", vienas);
 console.log("dvejatai:", du);
+*/
 
 // 06.
-
+/*
 let ran1 = Math.floor(Math.random() * 21) - 10;
 let ran2 = Math.floor(Math.random() * 21) - 10;
 let ran3 = Math.floor(Math.random() * 21) - 10;
@@ -121,9 +126,10 @@ if (ran3 == 0) {
 } else if (ran3 < 0) {
   console.log("[" + ran3 + "]");
 } else console.log("{" + ran3 + "}");
+*/
 
 // 07.
-
+/*
 let perka = Math.floor(Math.random() * 2995) + 5;
 let kaina = 1;
 
@@ -134,9 +140,10 @@ if (perka <= 1000) {
 } else {
   console.log("perka:", perka, "kaina:", kaina * perka * 0.96, "Eur");
 }
+*/
 
 // 08.
-
+/*
 let rand1 = Math.floor(Math.random() * 100);
 let rand2 = Math.floor(Math.random() * 100);
 let rand3 = Math.floor(Math.random() * 100);
@@ -200,7 +207,7 @@ if (val > 23) {
 console.log(val, ":", min, ":", sec);
 */
 // 10.
-
+/*
 let rand1 = Math.floor(Math.random() * 9000) + 1000;
 let rand2 = Math.floor(Math.random() * 9000) + 1000;
 let rand3 = Math.floor(Math.random() * 9000) + 1000;
@@ -291,3 +298,4 @@ if (rand5 > rand6) {
 }
 let ans = `${rand1} ${rand2} ${rand3} ${rand4} ${rand5} ${rand6}`;
 console.log(ans);
+*/

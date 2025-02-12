@@ -97,7 +97,7 @@ while (num > 0) {
 */
 
 // 08.
-/* */
+/* 
 
 function maxOf2(a, b) {
   if (a > b) return a;
@@ -105,3 +105,4 @@ function maxOf2(a, b) {
 }
 
 console.log(maxOf2(123, 1234));
+*/
