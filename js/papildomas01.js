@@ -199,7 +199,6 @@ if (val > 23) {
 
 console.log(val, ":", min, ":", sec);
 */
-
 // 10.
 
 let rand1 = Math.floor(Math.random() * 9000) + 1000;
