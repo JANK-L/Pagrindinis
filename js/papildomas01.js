@@ -207,7 +207,8 @@ if (val > 23) {
 console.log(val, ":", min, ":", sec);
 */
 // 10.
-/*
+/**/
+
 let rand1 = Math.floor(Math.random() * 9000) + 1000;
 let rand2 = Math.floor(Math.random() * 9000) + 1000;
 let rand3 = Math.floor(Math.random() * 9000) + 1000;
@@ -296,6 +297,5 @@ if (rand5 > rand6) {
   rand6 = rand5;
   rand5 = x;
 }
-let ans = `${rand1} ${rand2} ${rand3} ${rand4} ${rand5} ${rand6}`;
+let ans = `${rand6} ${rand5} ${rand4} ${rand3} ${rand2} ${rand1} `;
 console.log(ans);
-*/
