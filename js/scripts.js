@@ -345,7 +345,7 @@ console.log("Visu raidziu kiekis:", raidziuKiekis);
 */
 
 // 16.
-/* */
+/* 
 console.log(`
 ------------
 uzduotis 16\n`);
@@ -371,3 +371,307 @@ console.log("Masyvas:", skaiciai16);
 console.log("skaiciai kurie dalijasi is 3:", skaiciai_dalinasi3);
 console.log("Skaiciu kurie dalijasi is 3 suma:", suma);
 console.log("Skaiciu kurie dalijasi is 3 vidurkis:", vid16);
+*/
+
+// 1/5
+
+// 17.
+/* 
+console.log(`
+------------
+uzduotis 17\n`);
+
+let zodziuMasyvas = [
+  "stalas",
+  "kėdė",
+  "telefonas",
+  "kompiuteris",
+  "vaza",
+  "knyga",
+  "žibintas",
+  "pieštukas",
+  "langas",
+];
+
+for (const zodis in zodziuMasyvas) {
+  console.log(zodis, "-", zodziuMasyvas[zodis]);
+}
+*/
+
+// 18.
+/* 
+console.log(`
+------------
+uzduotis 18\n`);
+
+let pirkiniaiSarasas = [
+  "pienas",
+  "duona",
+  "kiaušiniai",
+  "sviestas",
+  "faršas",
+  "obuoliai",
+  "bulvės",
+  "pomidorai",
+  "makaronai",
+  "riešutai",
+  "sūris",
+  "kriaušės",
+  "alus",
+];
+
+console.log("Pirkiniu kiekis sarase:", pirkiniaiSarasas.length);
+
+for (const pirkinys of pirkiniaiSarasas) {
+  console.log("-", pirkinys);
+}
+*/
+
+// 19.
+/* 
+console.log(`
+------------
+uzduotis 19\n`);
+
+let pazymiuMasyvas = [];
+
+while (pazymiuMasyvas.length < 20) {
+  pazymiuMasyvas.push(Math.floor(Math.random() * 10 + 1));
+}
+
+let pazymiuVidurkis = 0;
+console.log("Pazymiai: ");
+for (const pazymys of pazymiuMasyvas) {
+  pazymiuVidurkis += pazymys;
+  console.log(pazymys);
+}
+console.log("Pazymiu vidurkis:", pazymiuVidurkis / pazymiuMasyvas.length);
+*/
+
+// 2/5
+
+// 20.
+/* 
+console.log(`
+------------
+uzduotis 20\n`);
+
+let kelioniuAtstumai = [];
+
+while (kelioniuAtstumai.length < 15) {
+  kelioniuAtstumai.push(Math.floor(Math.random() * 300));
+}
+
+console.log("Nuvaziuoti atstumai:", kelioniuAtstumai);
+console.log("atstumai ilgesni uz 150 Km:");
+for (const atstumas of kelioniuAtstumai) {
+  if (atstumas > 150) console.log(atstumas, "Km");
+}
+*/
+
+// 21.
+/* 
+console.log(`
+------------
+uzduotis 21\n`);
+
+let failuSarasas = [
+  "failas1.txt",
+  "failas2.txt",
+  "failas3.json",
+  "failas4.csv",
+  "failas5.txt",
+  "failas6.pdf",
+  "failas7.docx",
+  "failas8.json",
+  "failas9.pdf",
+  "failas10.csv",
+];
+console.log("Visi failai:", failuSarasas);
+console.log("Failai su kuriais galima dirbti:");
+
+for (const failas of failuSarasas) {
+  if (failas.endsWith(".txt") || failas.endsWith(".json")) console.log(failas);
+}
+*/
+
+// 3/5
+
+// 22.
+/* 
+console.log(`
+------------
+uzduotis 22\n`);
+
+let automobiliuMarkes = [
+  "Toyota",
+  "Ford",
+  "BMW",
+  "Audi",
+  "Mercedes-Benz",
+  "Volkswagen",
+  "Honda",
+  "Chevrolet",
+];
+
+for (const marke of automobiliuMarkes) {
+  console.log(marke, "- pavadinima sudaro", marke.length, "raidziu kiekis.");
+}
+*/
+
+// 23.
+/* 
+console.log(`
+------------
+uzduotis 23\n`);
+
+let ivykusiosKlaidos = [
+  "ui18",
+  "sys30",
+  "auth10",
+  "ui18",
+  "sys30",
+  "sys30",
+  "a///",
+  "auth10",
+];
+
+let klaidosPaaiskinimas = [
+  "Grafinės sąsajos klaida navigacijoje",
+  "Trūksta operatyviosios atminties sistemoje",
+  "Nepakankamos vartotojo teisės",
+  "Nenumatyta klaida.",
+];
+
+for (const klaida of ivykusiosKlaidos) {
+  if (klaida.startsWith("ui")) {
+    console.log(klaida, "-", klaidosPaaiskinimas[0]);
+  } else if (klaida.startsWith("sys")) {
+    console.log(klaida, "-", klaidosPaaiskinimas[1]);
+  } else if (klaida.startsWith("auth")) {
+    console.log(klaida, "-", klaidosPaaiskinimas[2]);
+  } else {
+    console.log(klaida, "-", klaidosPaaiskinimas[3]);
+  }
+}
+*/
+
+// 4/5
+
+// 24.
+/* 
+console.log(`
+------------
+uzduotis 24\n`);
+
+let likuciai = [234, 45, 688, 4, 345, 0, 56];
+
+const isperkamaPerDiena = 5;
+
+for (const likutis in likuciai) {
+  console.log(
+    "Prekes",
+    likutis + 1,
+    "liko",
+    likuciai[likutis],
+    "vnt. prekes uzteks mazdaug",
+    Math.ceil(likuciai[likutis] / isperkamaPerDiena),
+    "dienu."
+  );
+}
+*/
+
+// 25.
+/* 
+console.log(`
+------------
+uzduotis 25\n`);
+
+let pazymaiArray = [];
+
+while (pazymaiArray.length < 20) {
+  pazymaiArray.push(Math.floor(Math.random() * 10 + 1));
+}
+
+let vidurkisPazymiu = 0;
+let teigiamiPazymiai = [];
+
+console.log("Visi pazymiai:", pazymaiArray, "\n");
+
+for (const pazymys of pazymaiArray) {
+  if (pazymys > 4) teigiamiPazymiai.push(pazymys);
+  vidurkisPazymiu += pazymys;
+}
+
+console.log("Teigiami pazymiai:", teigiamiPazymiai);
+console.log("vidurkis pazymiu:", vidurkisPazymiu / pazymaiArray.length);
+console.log(
+  "Neigiamu pazymiu kiekis:",
+  pazymaiArray.length - teigiamiPazymiai.length
+);
+*/
+
+// 5/5
+
+// 26.
+/* 
+console.log(`
+------------
+uzduotis 26\n`);
+
+let pazymaiPirmo = [];
+let pazymaiAntro = [];
+
+while (pazymaiPirmo.length < 20) {
+  pazymaiPirmo.push(Math.floor(Math.random() * 10 + 1));
+  pazymaiAntro.push(Math.floor(Math.random() * 10 + 1));
+}
+
+let vidurkisArray = [0, 0];
+
+for (const pazymys in pazymaiPirmo) {
+  vidurkisArray[0] += pazymaiPirmo[pazymys];
+  vidurkisArray[1] += pazymaiAntro[pazymys];
+}
+vidurkisArray[0] /= pazymaiPirmo.length;
+vidurkisArray[1] /= pazymaiAntro.length;
+
+console.log("Pirmo studento pazymiai:", pazymaiPirmo);
+console.log("Pirmo studento Pazymiu vidurkis: ", vidurkisArray[0]);
+console.log("Antro studento pazymiai:", pazymaiAntro);
+console.log("Antro studento Pazymiu vidurkis: ", vidurkisArray[1]);
+
+if (vidurkisArray[0] == vidurkisArray[1]) {
+  console.log("Vidurkiai lygus.");
+} else if (vidurkisArray[0] > vidurkisArray[1]) {
+  console.log("Pirmo studento vidurkis didesnis.");
+} else console.log("Antro studento vidurkis didesnis.");
+*/
+
+// 27.
+/* */
+console.log(`
+------------
+uzduotis 27\n`);
+
+let zodziuArray = [
+  "lager",
+  "ipa",
+  "stout",
+  "pilsner",
+  "porter",
+  "ale",
+  "wheat",
+  "bock",
+  "saison",
+  "porter",
+];
+
+let atrinktiZodziai = [];
+
+for (const zodis of zodziuArray) {
+  if (zodis.length < 5) atrinktiZodziai.push(zodis);
+}
+
+console.log("Pradiniai zodziai:\n" + zodziuArray);
+console.log("Zodziai turintis maziau nei 5 raides:\n" + atrinktiZodziai);
