@@ -1,20 +1,20 @@
-// 1/2
+// JS masyvai 2 Uzduotys
 
 // 01.
 /* 
-console.log("uzduotis 01 \n");
+console.log(`
+------------
+uzduotis 01\n`);
 
-let masyvas = ["Susikurkite", "norimą", "masyvą", "su", "duomenimis"];
+let valgiai = ["Šaltibarščiai", "Keptos bulvės", "Kraujiniai vėdarai", "Pica"];
 
-console.log("Pirmas narys:", masyvas[0]);
-console.log("Paskutinys narys:", masyvas[masyvas.length - 1]);
+valgiai.push("Kebabas");
 
-console.log(
-  "Pirmas du viduryje nariai:",
-  masyvas[Math.round(masyvas.length / 2)],
-  masyvas[Math.round(masyvas.length / 2 - 1)]
-);
-console.log("Masyvo nariu skaicius: :", masyvas.length);
+valgiai.unshift("Sushi");
+
+valgiai.splice(valgiai.length / 2, 0, "Kibinas");
+valgiai.splice(2, 0, "Lasanija");
+console.log(valgiai);
 */
 
 // 02.
@@ -23,15 +23,9 @@ console.log(`
 ------------
 uzduotis 02\n`);
 
-let array = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+let skaiciai = [2, 5, 43, 32, 32, 432, 45, 67, 5, 4, 3, 276, 22, 2];
 
-console.log(array);
-
-array[0] = "X";
-array[4] = "X";
-array[5] = "X";
-
-console.log(array);
+console.log("Ar yra 5:", skaiciai.includes(5));
 */
 
 // 03.
@@ -40,14 +34,12 @@ console.log(`
 ------------
 uzduotis 03\n`);
 
-let array1 = [];
+let zodziai = ["Šaltibarščiai", "Keptos bulvės", "Kraujiniai vėdarai", "Pica"];
 
-array1.push(12, 4324324, 435435, 3333, 98234, 0);
-
-console.log(array1);
+console.log(zodziai.join(","));
+console.log(zodziai.join(", kitas: "));
+console.log(zodziai.join("\n"));
 */
-
-// 2/2
 
 // 04.
 /* 
@@ -55,13 +47,12 @@ console.log(`
 ------------
 uzduotis 04\n`);
 
-let empty_array = [];
+let sakinys =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores incidunt impedit architecto, id rem quisquam similique suscipit exercitationem amet nostrum";
 
-while (empty_array.length < 10) {
-  empty_array.push(Math.round(Math.random() * 100));
-}
+let isskaidyti = sakinys.split(" ");
 
-console.log(empty_array);
+console.log(isskaidyti.length);
 */
 
 // 05.
@@ -70,77 +61,345 @@ console.log(`
 ------------
 uzduotis 05\n`);
 
-let pazymiai1 = [10, 10, 5, 1, 7];
-let pazymiai2 = [];
+let pazymiai = [2, 6, 4, 3, 3, 5, 6, 7, 10];
 
-pazymiai2.push(8, 8, 5, 8, 8);
-
-let vidurkis = [0, 0];
-for (let i = 0; i < pazymiai1.length; i++) {
-  vidurkis[0] += pazymiai1[i];
-}
-vidurkis[0] /= pazymiai1.length;
-
-for (let i = 0; i < pazymiai2.length; i++) {
-  vidurkis[1] += pazymiai2[i];
-}
-vidurkis[1] /= pazymiai2.length;
-
-console.log("Vidurkis pirmo studento:", vidurkis[0]);
-console.log("Vidurkis antro studento:", vidurkis[1]);
-
-if (vidurkis[0] === vidurkis[1]) {
-  console.log("Vidurkiai studentu lygus.");
-} else if (vidurkis[0] > vidurkis[1]) {
-  console.log("Pirmo studento vidurkis didesnis.");
-} else console.log("Antro studento vidurkis didesnis.");
+console.log("Nerikiuoti:", ...pazymiai);
+pazymiai.sort((a, b) => b - a);
+console.log("surikiuoti:", ...pazymiai);
+console.log("3 dydziausi:", pazymiai[0], pazymiai[1], pazymiai[2]);
 */
 
-// 1/4
-
 // 06.
-/*
+/* 
 console.log(`
 ------------
 uzduotis 06\n`);
 
-let studiju_pavadinimai = [
-  "Teksto suvokimo programa",
-  "Biotechnikos programa",
-  "IT programa",
-  "Uzsienio literaturos programa",
-  "Laiko gaisimo programa",
-  "verslo vadybos programa",
+let biologijosStudentai = [
+  "Aidas",
+  "Ema",
+  "Matas",
+  "Ieva",
+  "Lukas",
+  "Karolina",
+  "Andrius",
+  "Simona",
+  "Povilas",
+  "Monika",
 ];
 
-for (let i = 0; i < studiju_pavadinimai.length; i++) {
-  console.log(studiju_pavadinimai[i]);
-}
+let matematikosStudentai = [
+  "Karolina",
+  "Andrius",
+  "Simona",
+  "Dainius",
+  "Aistė",
+  "Vytautas",
+  "Simona",
+  "Paulius",
+  "Rūtas",
+  "Jurgita",
+];
+
+let visiVardai = [...biologijosStudentai, ...matematikosStudentai];
+let visiUnikalusVardai = new Set(visiVardai);
+console.log("Visi bendrai vardai:", visiVardai);
+console.log("Visi bendrai unikalus vardai:", [...visiUnikalusVardai]);
 */
 
 // 07.
-/*
+/* 
 console.log(`
 ------------
 uzduotis 07\n`);
 
-let salys = [];
-salys.push(
-  "Lietuva",
-  "Kanada",
-  "Japonija",
-  "Brazilija",
-  "Egiptas",
-  "Austrija",
-  "Indija",
-  "Švedija",
-  "Meksika",
-  "Italija"
-);
+let temos1 = [
+  "Matematikos analizė",
+  "Genetika",
+  "Ekonomika",
+  "Programavimo kalbos",
+  "Makroekonomika",
+  "Fizikos principai",
+  "Mikrobiologija",
+];
+let temos2 = [
+  "Filosofija",
+  "Istorija",
+  "Pasaulio literatūra",
+  "Inžinerija",
+  "Klimato kaita",
+  "Dirbtinis intelektas",
+];
 
-for (let i = 0; i < salys.length; i++) {
-  console.log("Šalis", salys[i]);
+let sujungtas = [...temos1, ...temos2];
+console.log("sujungtos temos:", sujungtas);
+*/
+
+// 08.
+/* 
+console.log(`
+------------
+uzduotis 08/n`);
+
+let spalvos = ["raudona", "zalia", "melina", "geltona", "orangine"];
+let kopijaSpalvu = [...spalvos];
+
+spalvos = [];
+
+console.log("orginalus masyvas:", spalvos);
+console.log("masyvo kopija:", kopijaSpalvu);
+*/
+
+// 09.
+/* 
+console.log(`
+------------
+uzduotis 09/n`);
+
+let miestai = [
+  "Vilnius",
+  "Kaunas",
+  "Klaipėda",
+  "Šiauliai",
+  "Panevėžys",
+  "Alytus",
+  "Marijampolė",
+];
+console.log("miestu sarasas: ", miestai);
+console.log(
+  "Pasirinkto miesto (Panevėžys) indexas:",
+  miestai.indexOf("Panevėžys")
+);
+*/
+
+// 10.
+/* 
+console.log(`
+------------
+uzduotis 10/n`);
+
+let skaiciuRinkinis = [321, 43, 60, 64, 7, 6403, 5, 643, 60, 60, 60, 432];
+let kopijaMasyvo = [...skaiciuRinkinis];
+let dublikatai = [];
+
+for (const skaicius of skaiciuRinkinis) {
+  let kiekis = 0;
+  while (kopijaMasyvo.indexOf(skaicius) >= 0) {
+    kiekis++;
+    kopijaMasyvo.splice(kopijaMasyvo.indexOf(skaicius), 1);
+  }
+  if (kiekis > 1) dublikatai.push(skaicius);
 }
+
+if (dublikatai.length == 0) {
+  console.log("Masyve:[" + skaiciuRinkinis + "] nera dublikatu");
+} else
+  console.log(
+    "Masyve:" + skaiciuRinkinis,
+    "] yra dublikatu (skaiciai " + dublikatai,
+    ")"
+  );
+*/
+
+// 11.
+/* 
+console.log(`
+------------
+uzduotis 11/n`);
+
+let masyvas = [321, 43, 60, 64, 7, 432];
+let isskaidyti = [];
+let iKiek = 2;
+
+while (masyvas.length > 0) {
+  isskaidyti.push(masyvas.splice(0, iKiek));
+}
+console.log(isskaidyti);
+*/
+
+// 12.
+/* 
+console.log(`
+------------
+uzduotis 12/n`);
+
+let skaicius = "1234321";
+let atvirkscias = skaicius.split("").reverse().join("");
+
+if (skaicius === atvirkscias)
+  console.log("Skaicius", skaicius, "yra palindrominis");
+else console.log("Skaicius", skaicius, "nera palindrominis");
+*/
+
+// 13.
+/* 
+console.log(`
+------------
+uzduotis 13/n`);
+
+let pirmasM = [1, 2, 3, 4];
+let antrasM = [3, 4, 5, 6, 7];
+let treciasM = [];
+
+for (const skaicius of pirmasM) {
+  if (treciasM.indexOf(skaicius) === -1) {
+    treciasM.push(skaicius);
+  }
+}
+for (const skaicius of antrasM) {
+  if (treciasM.indexOf(skaicius) === -1) {
+    treciasM.push(skaicius);
+  }
+}
+console.log("Pirmas masyvas:\n", pirmasM);
+console.log("Antras masyvas:\n", antrasM);
+console.log("Sujungtas masyvas be pasikartojimu:\n", treciasM);
+*/
+
+// 14.
+/* 
+console.log(`
+------------
+uzduotis 14/n`);
+
+let masyvas1 = [21, 45, 76, 87, 43, 432];
+let masyvas2 = [84, 643, 532, 76, 785, 21];
+
+let atsikartoja = [];
+
+for (const item of masyvas1) {
+  if (masyvas2.indexOf(item) != -1 && atsikartoja.indexOf(item) === -1) {
+    atsikartoja.push(item);
+  }
+}
+console.log("Pirmas masyvas:\n", masyvas1);
+console.log("Antras masyvas:\n", masyvas2);
+console.log("atsikartoja:\n", atsikartoja);
+*/
+
+// 15.
+/* 
+console.log(`
+------------
+uzduotis 15/n`);
+
+let masyvasSkaiciu = [324, 6, 7, 43, 32, 21, 1, 2, 3, 4, 5, 56, 7, 8, 0];
+
+for (let i = 1; i > 0; i++) {
+  if (masyvasSkaiciu.indexOf(i) === -1) {
+    console.log("Masyvas:\n", masyvasSkaiciu);
+    console.log("Maziausias teigiamas, kuris neegzituoje masyve:", i);
+    break;
+  }
+}
+*/
+
+// 16.
+/* 
+console.log(`
+------------
+uzduotis 16/n`);
+
+let masyvas = [1, 2, 3, 4, 65];
+
+console.log("Orginalus:\n", masyvas);
+
+masyvas.reverse();
+
+console.log("Apverstas:\n", masyvas);
+*/
+
+// JS masyvai 3 Uzduotys
+
+// 01.
+/*
+console.log(`
+------------
+uzduotis 01\n`);
+
+let skaiciai = [7, 5, 9, 3, 4, 2, 3, 4, 6, 7, 8, 9];
+
+let lyginis = skaiciai.find((skaicius) => skaicius % 2 === 0);
+
+console.log(lyginis);
+ */
+
+// 02.
+/*
+console.log(`
+------------
+uzduotis 02\n`);
+
+let skaiciai = [-7, -5, -9, 0, 5, 2, 3, 4, -6, -7, 8, 9];
+
+let teigiamas = skaiciai.find((skaicius) => skaicius > 0);
+
+console.log(teigiamas);
+*/
+
+// 03.
+/* 
+console.log(`
+------------
+uzduotis 03\n`);
+
+let skaiciai = [7, 5, 9, 0, 4, -6, -7, 8, 9];
+
+let neigiamoIndex = skaiciai.findIndex((skaicius) => skaicius < 0);
+
+console.log(neigiamoIndex);
+*/
+
+// 04.
+/* 
+console.log(`
+------------
+uzduotis 04\n`);
+
+let skaiciai = [7, 5, 9, 0, 4, -60, -7, 19, 9];
+
+let skaiciausIndex = skaiciai.findIndex((skaicius) => skaicius >= 10);
+
+console.log(skaiciausIndex);
+*/
+
+// 05.
+/* 
+console.log(`
+------------
+uzduotis 05\n`);
+
+let skaiciai = [7, 5, 9, 0, 21, -60, -7, 19, 9];
+
+let pirmasis = skaiciai.find((skaicius) => skaicius % 3 === 0 && skaicius > 10);
+
+console.log(pirmasis);
+*/
+
+// 06.
+/* 
+console.log(`
+------------
+uzduotis 06\n`);
+
+let skaiciai = [7, 5, 9, 0, 21, -60, -7, 19, 9];
+
+let pirmasis = skaiciai.find((skaicius) => skaicius % 2 === 0 && skaicius < 0);
+
+console.log(pirmasis);
+*/
+
+// 07.
+/* 
+console.log(`
+------------
+uzduotis 07\n`);
+
+let skaiciai = [6, 4, 4, 10, 210, 60, 707, -190, 90];
+
+let teigiami = skaiciai.every((skaicius) => skaicius > 0);
+
+console.log("Visi teigiami:", teigiami);
 */
 
 // 08.
@@ -149,44 +408,25 @@ console.log(`
 ------------
 uzduotis 08\n`);
 
-let projektai = [
-  "Žalioji iniciatyva",
-  "Inovacijų laboratorija",
-  "Skaitmeninė revoliucija",
-  "Ateities miestai",
-  "Tvarus vystymasis",
-  "Dirbtinio intelekto projektas",
-  "Aplinkos apsauga",
-  "Švietimo transformacija",
-  "Sveikatos technologijos",
-  "Energijos efektyvumas",
-];
+let skaiciai = [632, 432, 432, 1032, 21032, 6032, 707, 1902, 9032];
 
-for (let i = 0; i < projektai.length; i++) {
-  console.log("Projektas", i + 1, ":", projektai[i]);
-}
+let lyginiai = skaiciai.every((skaicius) => skaicius % 2 == 0);
+
+console.log("Visi lyginiai:", lyginiai);
 */
 
-// 2/4
-
 // 09.
-/*
+/* 
 console.log(`
 ------------
 uzduotis 09\n`);
 
-let skaiciai = [3, 7, 1, 9, 5, 8, 2, 6, 4, 10];
-console.log("masyvas:", skaiciai);
-let didesni_uz5 = [];
+let skaiciai = [63, 43, 47, 103, 2103, 603, 707, 190, 903];
 
-for (let i = 0; i < skaiciai.length; i++) {
-  if (Number(skaiciai[i]) > 5) {
-    didesni_uz5.push(skaiciai[i]);
-  }
-}
+let mazesni5 = skaiciai.some((skaicius) => skaicius < 5);
 
-console.log("Didesni uz 5:", didesni_uz5);
- */
+console.log("Yra mazesniu uz 5:", mazesni5);
+*/
 
 // 10.
 /* 
@@ -194,18 +434,11 @@ console.log(`
 ------------
 uzduotis 10\n`);
 
-let skaiciu_array = [];
+let skaiciai = [0, 0, 47, -103, -2103, -3, -7, -190, -903];
 
-while (skaiciu_array.length < 20) {
-  skaiciu_array.push(Math.floor(Math.random() * 100));
-}
-console.log("Masivas: \n" + skaiciu_array);
-console.log("Skaiciai dalyjasi is 4:");
-for (let i = 0; i < skaiciu_array.length; i++) {
-  if (skaiciu_array[i] % 4 == 0) {
-    console.log(skaiciu_array[i]);
-  }
-}
+let teigiami = skaiciai.some((skaicius) => skaicius > 0);
+
+console.log("Yra teigiamu:", teigiami);
 */
 
 // 11.
@@ -214,19 +447,11 @@ console.log(`
 ------------
 uzduotis 11\n`);
 
-let pazymiai = [];
+let zodiai = ["asrt", "adsf", "sd", "dsas"];
 
-while (pazymiai.length < 20) {
-  pazymiai.push(Math.floor(Math.random() * 10 + 1));
-}
+let daugiau2 = zodiai.every((zodis) => zodis.length > 2);
 
-console.log("Pazymiai: \n" + pazymiai);
-let vid = 0;
-for (let i = 0; i < pazymiai.length; i++) {
-  vid += pazymiai[i];
-}
-
-console.log("Vidurkis:", vid / pazymiai.length);
+console.log("visi turi 3 arba daugiau simboliu:", daugiau2);
 */
 
 // 12.
@@ -234,27 +459,12 @@ console.log("Vidurkis:", vid / pazymiai.length);
 console.log(`
 ------------
 uzduotis 12\n`);
+let zodiai = ["bsrt", "Abdsf", "sd", "sas"];
 
-let pazymiai12 = [];
+let prasidedaA = zodiai.some((zodis) => zodis.toLowerCase().startsWith("a"));
 
-while (pazymiai12.length < 20) {
-  pazymiai12.push(Math.floor(Math.random() * 10 + 1));
-}
-
-console.log("Pazymiai: \n" + pazymiai12);
-let vid12 = 0;
-for (let i = 0; i < pazymiai12.length; i++) {
-  vid12 += pazymiai12[i];
-}
-vid12 /= pazymiai12.length;
-console.log("Vidurkis:", vid12);
-console.log("Didesni pazymiai uz vidurki:");
-for (let i = 0; i < pazymiai12.length; i++) {
-  if (pazymiai12[i] > vid12) console.log(pazymiai12[i]);
-}
+console.log("visi turi 3 arba daugiau simboliu:", prasidedaA);
 */
-
-// 3/4
 
 // 13.
 /* 
@@ -262,19 +472,13 @@ console.log(`
 ------------
 uzduotis 13\n`);
 
-let skaiciai13 = [];
+let skaiciai = [47, 34, 2103, 3, 7, 190, 903];
 
-while (skaiciai13.length < 20) {
-  skaiciai13.push(Math.floor(Math.random() * 100));
-}
-console.log("Skaiciai:");
-for (let i = 0; i < skaiciai13.length; i++) {
-  if (skaiciai13[i] % 2 == 0) {
-    console.log(skaiciai13[i], skaiciai13[i] ** 2);
-    continue;
-  }
-  console.log(skaiciai13[i]);
-}
+let teigiamiIrLyginiai =
+  skaiciai.every((skaicius) => skaicius > 0) &&
+  skaiciai.some((skaicius) => skaicius % 2 === 0);
+
+console.log("Yra teigiamu ir lyginiu:", teigiamiIrLyginiai);
 */
 
 // 14.
@@ -283,27 +487,12 @@ console.log(`
 ------------
 uzduotis 14\n`);
 
-let pazymiai14 = [];
+let skaiciai = [47, 0, -2103, -3, -7, 190, 903];
 
-while (pazymiai14.length < 20) {
-  pazymiai14.push(Math.floor(Math.random() * 10 + 1));
-}
+let teigiami = skaiciai.filter((skaicius) => skaicius > 0);
 
-console.log("Pazymiai:");
-for (let i = 0; i < pazymiai14.length; i++) {
-  if (pazymiai14[i] < 5) {
-    console.log(
-      `Pazimys ${pazymiai14[i]} neigiamas, iki teigiamo truko ${
-        5 - pazymiai14[i]
-      } balo(-ų).`
-    );
-    continue;
-  }
-  console.log(`Pazimys ${pazymiai14[i]} teigiamas.`);
-}
+console.log("teigiami:", teigiami);
 */
-
-// 4/4
 
 // 15.
 /* 
@@ -311,37 +500,11 @@ console.log(`
 ------------
 uzduotis 15\n`);
 
-let zodziai = [
-  "gyvenimas",
-  "mokslas",
-  "kelionė",
-  "menas",
-  "gamtos",
-  "technologijos",
-  "žmogus",
-  "medis",
-  "muzika",
-  "skaitmeninis",
-  "sveikata",
-  "laimė",
-  "draugystė",
-  "kelias",
-  "mėnulis",
-  "pasaulis",
-  "sėkmė",
-  "gamtos",
-  "alus",
-  "atmintis",
-];
+let reitingai = [5, 1, 4, 5, 1, 3, 4, 5, 2];
 
-let raidziuKiekis = 0;
-for (let i = 0; i < zodziai.length; i++) {
-  console.log(
-    `Zodis "${zodziai[i]}" sudarytas is ${zodziai[i].length} raidziu.`
-  );
-  raidziuKiekis += zodziai[i].length;
-}
-console.log("Visu raidziu kiekis:", raidziuKiekis);
+let filtruoti = reitingai.filter((skaicius) => skaicius < 3);
+
+console.log("filtruoti 1-2:", filtruoti);
 */
 
 // 16.
@@ -350,30 +513,14 @@ console.log(`
 ------------
 uzduotis 16\n`);
 
-let skaiciai16 = [];
+let skaiciai = [47, 0, 44, -3, -7, 190, 903];
 
-while (skaiciai16.length < 20) {
-  skaiciai16.push(Math.floor(Math.random() * 100));
-}
-let skaiciai_dalinasi3 = [];
-let vid16 = 0;
+let teigiamiIrLyginiai = skaiciai.filter(
+  (skaicius) => skaicius > 0 && skaicius % 2 === 0
+);
 
-for (let i = 0; i < skaiciai16.length; i++) {
-  if (skaiciai16[i] % 3 == 0) {
-    skaiciai_dalinasi3.push(skaiciai16[i]);
-    vid16 += skaiciai16[i];
-  }
-}
-let suma = vid16;
-vid16 /= skaiciai_dalinasi3.length;
-
-console.log("Masyvas:", skaiciai16);
-console.log("skaiciai kurie dalijasi is 3:", skaiciai_dalinasi3);
-console.log("Skaiciu kurie dalijasi is 3 suma:", suma);
-console.log("Skaiciu kurie dalijasi is 3 vidurkis:", vid16);
+console.log("teigiami:", teigiamiIrLyginiai);
 */
-
-// 1/5
 
 // 17.
 /* 
@@ -381,21 +528,11 @@ console.log(`
 ------------
 uzduotis 17\n`);
 
-let zodziuMasyvas = [
-  "stalas",
-  "kėdė",
-  "telefonas",
-  "kompiuteris",
-  "vaza",
-  "knyga",
-  "žibintas",
-  "pieštukas",
-  "langas",
-];
+let salys = ["Belgija", "Lietuva", "Graikija", "Bulgarija"];
 
-for (const zodis in zodziuMasyvas) {
-  console.log(zodis, "-", zodziuMasyvas[zodis]);
-}
+let prasidedaB = salys.filter((salis) => salis.toLowerCase().includes("b"));
+
+console.log("turi b raide:", prasidedaB);
 */
 
 // 18.
@@ -404,27 +541,13 @@ console.log(`
 ------------
 uzduotis 18\n`);
 
-let pirkiniaiSarasas = [
-  "pienas",
-  "duona",
-  "kiaušiniai",
-  "sviestas",
-  "faršas",
-  "obuoliai",
-  "bulvės",
-  "pomidorai",
-  "makaronai",
-  "riešutai",
-  "sūris",
-  "kriaušės",
-  "alus",
-];
+let skaiciai = [3, 7, 2, 9, 6, 4];
 
-console.log("Pirkiniu kiekis sarase:", pirkiniaiSarasas.length);
+let lyginiaiX2 = skaiciai
+  .filter((skaicius) => skaicius % 2 === 0)
+  .map((skaicius) => skaicius * 2);
 
-for (const pirkinys of pirkiniaiSarasas) {
-  console.log("-", pirkinys);
-}
+console.log("lyginiai *2:", lyginiaiX2);
 */
 
 // 19.
@@ -433,22 +556,12 @@ console.log(`
 ------------
 uzduotis 19\n`);
 
-let pazymiuMasyvas = [];
+let skaiciai = [3, 7, 2, 9, 6, 4];
 
-while (pazymiuMasyvas.length < 20) {
-  pazymiuMasyvas.push(Math.floor(Math.random() * 10 + 1));
-}
+let onePlius = skaiciai.map((skaicius) => skaicius + 1);
 
-let pazymiuVidurkis = 0;
-console.log("Pazymiai: ");
-for (const pazymys of pazymiuMasyvas) {
-  pazymiuVidurkis += pazymys;
-  console.log(pazymys);
-}
-console.log("Pazymiu vidurkis:", pazymiuVidurkis / pazymiuMasyvas.length);
+console.log("vienu padidinti:", onePlius);
 */
-
-// 2/5
 
 // 20.
 /* 
@@ -456,17 +569,11 @@ console.log(`
 ------------
 uzduotis 20\n`);
 
-let kelioniuAtstumai = [];
+let zodziai = ["bananas", "baba", "klėtis"];
 
-while (kelioniuAtstumai.length < 15) {
-  kelioniuAtstumai.push(Math.floor(Math.random() * 300));
-}
+let upercasesai = zodziai.map((zodis) => zodis.toUpperCase());
 
-console.log("Nuvaziuoti atstumai:", kelioniuAtstumai);
-console.log("atstumai ilgesni uz 150 Km:");
-for (const atstumas of kelioniuAtstumai) {
-  if (atstumas > 150) console.log(atstumas, "Km");
-}
+console.log("did=iosiomis raidemis:", upercasesai);
 */
 
 // 21.
@@ -475,27 +582,12 @@ console.log(`
 ------------
 uzduotis 21\n`);
 
-let failuSarasas = [
-  "failas1.txt",
-  "failas2.txt",
-  "failas3.json",
-  "failas4.csv",
-  "failas5.txt",
-  "failas6.pdf",
-  "failas7.docx",
-  "failas8.json",
-  "failas9.pdf",
-  "failas10.csv",
-];
-console.log("Visi failai:", failuSarasas);
-console.log("Failai su kuriais galima dirbti:");
+let skaiciai = [3, 7, -2, 9, 6, 4];
 
-for (const failas of failuSarasas) {
-  if (failas.endsWith(".txt") || failas.endsWith(".json")) console.log(failas);
-}
+let suma = skaiciai.reduce((laikina_suma, skaicius) => laikina_suma + skaicius);
+
+console.log("suma:", suma);
 */
-
-// 3/5
 
 // 22.
 /* 
@@ -503,20 +595,13 @@ console.log(`
 ------------
 uzduotis 22\n`);
 
-let automobiliuMarkes = [
-  "Toyota",
-  "Ford",
-  "BMW",
-  "Audi",
-  "Mercedes-Benz",
-  "Volkswagen",
-  "Honda",
-  "Chevrolet",
-];
+let skaiciai = [3, 7, 2, 9, 6, 4];
 
-for (const marke of automobiliuMarkes) {
-  console.log(marke, "- pavadinima sudaro", marke.length, "raidziu kiekis.");
-}
+let suma = skaiciai
+  .filter((skaicius) => skaicius % 2 === 0)
+  .reduce((laikina_suma, skaicius) => laikina_suma + skaicius);
+
+console.log("liginiu suma:", suma);
 */
 
 // 23.
@@ -525,38 +610,12 @@ console.log(`
 ------------
 uzduotis 23\n`);
 
-let ivykusiosKlaidos = [
-  "ui18",
-  "sys30",
-  "auth10",
-  "ui18",
-  "sys30",
-  "sys30",
-  "a///",
-  "auth10",
-];
+let zodziai = ["bananas", "baba", "klėtis"];
 
-let klaidosPaaiskinimas = [
-  "Grafinės sąsajos klaida navigacijoje",
-  "Trūksta operatyviosios atminties sistemoje",
-  "Nepakankamos vartotojo teisės",
-  "Nenumatyta klaida.",
-];
+let upercasesai = zodziai.map((zodis) => zodis[0].toUpperCase());
 
-for (const klaida of ivykusiosKlaidos) {
-  if (klaida.startsWith("ui")) {
-    console.log(klaida, "-", klaidosPaaiskinimas[0]);
-  } else if (klaida.startsWith("sys")) {
-    console.log(klaida, "-", klaidosPaaiskinimas[1]);
-  } else if (klaida.startsWith("auth")) {
-    console.log(klaida, "-", klaidosPaaiskinimas[2]);
-  } else {
-    console.log(klaida, "-", klaidosPaaiskinimas[3]);
-  }
-}
+console.log("pirma raide upercase:", upercasesai);
 */
-
-// 4/5
 
 // 24.
 /* 
@@ -564,21 +623,11 @@ console.log(`
 ------------
 uzduotis 24\n`);
 
-let likuciai = [234, 45, 688, 4, 345, 0, 56];
+let zodziai = ["bananas", "baba", "klėtis", "bananas", "du"];
 
-const isperkamaPerDiena = 5;
+let upercasesai = zodziai.filter((zodis) => zodis.length > 4);
 
-for (const likutis in likuciai) {
-  console.log(
-    "Prekes",
-    likutis + 1,
-    "liko",
-    likuciai[likutis],
-    "vnt. prekes uzteks mazdaug",
-    Math.ceil(likuciai[likutis] / isperkamaPerDiena),
-    "dienu."
-  );
-}
+console.log("zodziu kiekis is >=5 raidziu:", upercasesai.length);
 */
 
 // 25.
@@ -587,31 +636,12 @@ console.log(`
 ------------
 uzduotis 25\n`);
 
-let pazymaiArray = [];
+let zodziai = ["bananas", "baba", "klėtis", "bananas", "du"];
 
-while (pazymaiArray.length < 20) {
-  pazymaiArray.push(Math.floor(Math.random() * 10 + 1));
-}
+let ilgiai = zodziai.map((zodis) => zodis.length);
 
-let vidurkisPazymiu = 0;
-let teigiamiPazymiai = [];
-
-console.log("Visi pazymiai:", pazymaiArray, "\n");
-
-for (const pazymys of pazymaiArray) {
-  if (pazymys > 4) teigiamiPazymiai.push(pazymys);
-  vidurkisPazymiu += pazymys;
-}
-
-console.log("Teigiami pazymiai:", teigiamiPazymiai);
-console.log("vidurkis pazymiu:", vidurkisPazymiu / pazymaiArray.length);
-console.log(
-  "Neigiamu pazymiu kiekis:",
-  pazymaiArray.length - teigiamiPazymiai.length
-);
+console.log("zodziu ilgiai:", ilgiai);
 */
-
-// 5/5
 
 // 26.
 /* 
@@ -619,59 +649,68 @@ console.log(`
 ------------
 uzduotis 26\n`);
 
-let pazymaiPirmo = [];
-let pazymaiAntro = [];
+let vardaiIrAmzius = ["Tomas 34", "Jonas 20", "Gintare 40", "inga 24"];
 
-while (pazymaiPirmo.length < 20) {
-  pazymaiPirmo.push(Math.floor(Math.random() * 10 + 1));
-  pazymaiAntro.push(Math.floor(Math.random() * 10 + 1));
-}
+let vardai = vardaiIrAmzius.map((zodis) => zodis.split(" ")[0]);
 
-let vidurkisArray = [0, 0];
-
-for (const pazymys in pazymaiPirmo) {
-  vidurkisArray[0] += pazymaiPirmo[pazymys];
-  vidurkisArray[1] += pazymaiAntro[pazymys];
-}
-vidurkisArray[0] /= pazymaiPirmo.length;
-vidurkisArray[1] /= pazymaiAntro.length;
-
-console.log("Pirmo studento pazymiai:", pazymaiPirmo);
-console.log("Pirmo studento Pazymiu vidurkis: ", vidurkisArray[0]);
-console.log("Antro studento pazymiai:", pazymaiAntro);
-console.log("Antro studento Pazymiu vidurkis: ", vidurkisArray[1]);
-
-if (vidurkisArray[0] == vidurkisArray[1]) {
-  console.log("Vidurkiai lygus.");
-} else if (vidurkisArray[0] > vidurkisArray[1]) {
-  console.log("Pirmo studento vidurkis didesnis.");
-} else console.log("Antro studento vidurkis didesnis.");
+console.log("tik vardai:", vardai);
 */
 
 // 27.
-/* */
+/* 
 console.log(`
 ------------
 uzduotis 27\n`);
 
-let zodziuArray = [
-  "lager",
-  "ipa",
-  "stout",
-  "pilsner",
-  "porter",
-  "ale",
-  "wheat",
-  "bock",
-  "saison",
-  "porter",
-];
+let vardaiIrAmzius = ["Tomas 34", "Jonas 20", "Gintare 40", "inga 24"];
 
-let atrinktiZodziai = [];
+let amziaiSuma = vardaiIrAmzius
+  .map((zodis) => Number(zodis.split(" ")[1]))
+  .reduce((laikina_suma, amzius) => laikina_suma + amzius);
 
-for (const zodis of zodziuArray) {
-  if (zodis.length < 5) atrinktiZodziai.push(zodis);
-}
+console.log("amziu suma:", amziaiSuma);
+*/
 
-console.log("Pradiniai zodziai:\n" + zodziuArray);
-console.log("Zodziai turintis maziau nei 5 raides:\n" + atrinktiZodziai);
+// 28.
+/* 
+console.log(`
+------------
+uzduotis 28\n`);
+
+let likuciai = [3, 7, 2, 9, 6, 4];
+
+let truksta = likuciai
+  .filter((likutis) => likutis < 5)
+  .map((likutis) => 5 - likutis);
+
+console.log("truksta iki 5:", truksta);
+*/
+
+// 29.
+/* 
+console.log(`
+------------
+uzduotis 29\n`);
+
+let pazymiai = [3, 7, 10, 9, 6, 4];
+
+let geriPazymiai = pazymiai.filter((pazymys) => pazymys > 7);
+
+console.log("geru pazymiu kiekis (>=8)", geriPazymiai.length);
+*/
+
+// 30.
+/* */
+console.log(`
+------------
+uzduotis 30\n`);
+
+let zodziai = ["bananas", "baba", "Aklėtis", "bananas", "du"];
+
+let aKiekis = zodziai
+  .filter((zodis) => zodis.toLowerCase().includes("a"))
+  .join("")
+  .split("")
+  .filter((raide) => raide.toLowerCase().includes("a"));
+
+console.log("a raidziu:", aKiekis.length);
