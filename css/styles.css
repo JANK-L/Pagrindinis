@@ -1,49 +1,22 @@
-body {
-  background-color: rgb(41, 38, 38);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
 .input {
-  background-color: darkgray;
-  width: 100%;
-}
-.input form {
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-.input form textarea {
-  width: 100%;
+
+.input textarea {
+  max-width: 500px;
   height: 100px;
-}
-.input form button {
-  align-self: flex-start;
+  background-color: rgb(221, 229, 243);
 }
 
-#uzrasai {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 25px;
+.klaida p {
+  color: red;
+  border: solid 2px red;
+  background-color: rgb(247, 213, 213);
+  padding: 10px;
 }
 
-#uzrasai div {
-  display: flex;
-  flex-direction: column;
-  width: calc((100% - 50px * 5) / 5);
-  padding: 15px;
-  background-color: yellow;
-}
-
-#uzrasai #tuscias {
-  min-width: calc(100% - 45px);
-
-  padding: 45px;
-  padding-right: 0;
-
-  background-color: darkgray;
+.slepti {
+  display: none;
 }
