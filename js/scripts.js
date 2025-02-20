@@ -692,15 +692,15 @@ console.log(`
 ------------
 uzduotis 29\n`);
 
-let pazymiai = [3, 7, 10, 9, 6, 4];
+let pazymiai = [3, 8, 10, 9, 6, 4];
 
-let geriPazymiai = pazymiai.filter((pazymys) => pazymys > 7);
+let geriPazymiai = pazymiai.filter((pazymys) => pazymys > 7).length;
 
-console.log("geru pazymiu kiekis (>=8)", geriPazymiai.length);
+console.log("geru pazymiu kiekis (>=8)", geriPazymiai);
 */
 
 // 30.
-/* */
+/* 
 console.log(`
 ------------
 uzduotis 30\n`);
@@ -714,3 +714,4 @@ let aKiekis = zodziai
   .filter((raide) => raide.toLowerCase().includes("a")).length;
 
 console.log("a raidziu:", aKiekis);
+*/
