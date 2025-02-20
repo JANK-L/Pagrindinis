@@ -625,9 +625,9 @@ uzduotis 24\n`);
 
 let zodziai = ["bananas", "baba", "klėtis", "bananas", "du"];
 
-let upercasesai = zodziai.filter((zodis) => zodis.length > 4);
+let upercasesai = zodziai.filter((zodis) => zodis.length > 4).length;
 
-console.log("zodziu kiekis is >=5 raidziu:", upercasesai.length);
+console.log("zodziu kiekis is >=5 raidziu:", upercasesai);
 */
 
 // 25.
@@ -711,6 +711,6 @@ let aKiekis = zodziai
   .filter((zodis) => zodis.toLowerCase().includes("a"))
   .join("")
   .split("")
-  .filter((raide) => raide.toLowerCase().includes("a"));
+  .filter((raide) => raide.toLowerCase().includes("a")).length;
 
-console.log("a raidziu:", aKiekis.length);
+console.log("a raidziu:", aKiekis);
