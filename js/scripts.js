@@ -225,8 +225,8 @@ console.log(
   "Km"
 );
 
-// 5.
-console.log("\n-- 05 --\n");
+// 6.
+console.log("\n-- 06 --\n");
 
 let kruopos = [
   {
@@ -274,3 +274,59 @@ galioja =
     : "Negalioja";
 
 console.log(kruopos[1].pavadinimas, galioja);
+
+// uzduotys 1/2
+
+// 7.
+console.log("\n-- 07 --\n");
+
+let knygynas = {};
+
+knygynas.pavadinimas = "Pegasas";
+knygynas.adresas = "Prastoji g. 1, Vilnius";
+knygynas.plotas_m2 = 28;
+knygynas.knygu_kiekis = 200;
+knygynas.darbo_valandos = 8;
+knygynas.ar_atidarytas = false;
+
+for (raktas in knygynas) {
+  console.log(raktas, ":", knygynas[raktas]);
+}
+
+console.log();
+
+for (raktas in knygynas) {
+  if (typeof knygynas[raktas] != "string")
+    console.log(raktas, ":", knygynas[raktas]);
+}
+
+// 8.
+console.log("\n-- 08 --\n");
+
+let studentai = [
+  {
+    vardas: "Vardenis",
+    pavarde: "Pavardenis",
+    studiju_programa: "Banginiu prieziura",
+    pazymiai: [6, 6, 6, 7, 6, 5, 5],
+  },
+  {
+    vardas: "Genadijus",
+    pavarde: "Stucman",
+    studiju_programa: "Pramogu industrija",
+    pazymiai: [5, 10, 6, 7, 7, 5, 5],
+  },
+];
+
+let vidurkis = [0, 0];
+
+for (let i = 0; i < studentai.length; i++) {
+  for (const pazymys of studentai[i].pazymiai) {
+    vidurkis[i] += pazymys;
+  }
+  vidurkis[i] /= studentai[i].pazymiai.length;
+  vidurkis[i] = Number(vidurkis[i].toFixed(2));
+}
+
+console.log(studentai);
+console.log("vidurkiai:", vidurkis);
