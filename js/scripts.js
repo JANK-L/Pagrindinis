@@ -330,3 +330,288 @@ for (let i = 0; i < studentai.length; i++) {
 
 console.log(studentai);
 console.log("vidurkiai:", vidurkis);
+
+// 9.
+console.log("\n-- 09 --\n");
+
+let preke = {
+  pavadinimas: "Valtis",
+  kaina: 400,
+  kaina_be_PVM: function () {
+    let kainaBePVM = this.kaina * 0.79;
+    return kainaBePVM;
+  },
+};
+console.log(preke);
+console.log("kaina be PVM:", preke.kaina_be_PVM());
+
+// 10.
+console.log("\n-- 10 --\n");
+
+let reservacija = {
+  restoranas: "Ale Italiano",
+  kaina: 25,
+  laisvu_vietu: 21,
+  rezervuoti_viska: function () {
+    console.log(
+      "Reservavus visas vietas, kainuotu:",
+      this.kaina * this.laisvu_vietu
+    );
+  },
+};
+console.log(reservacija);
+reservacija.rezervuoti_viska();
+
+// 11.
+console.log("\n-- 11 --\n");
+
+let knygos11 = [
+  { pavadinimas: "Knyga be vardo", autorius: "Be autoriaus", kaina: 5 },
+  { pavadinimas: "Paprasta knyga", autorius: "Nezinoma", kaina: 10 },
+];
+
+console.log(knygos11[0]);
+console.log("Antros knygos autorius:", knygos11[1].autorius);
+
+// 12.
+console.log("\n-- 12 --\n");
+
+let Prekes12 = [
+  { pavadinimas: "A55 5G", gamintojas: "SAMSUNG", kaina: 350 },
+  { pavadinimas: "C5", gamintojas: "POCO", kaina: 70 },
+  { pavadinimas: "P40", gamintojas: "HUAWEI", kaina: 150 },
+];
+for (const preke of Prekes12) {
+  console.log(preke.gamintojas, preke.pavadinimas, "Kaina:", preke.kaina);
+}
+
+// 13.
+console.log("\n-- 13 --\n");
+
+let automobilis12 = [
+  { marke: "Ford", modelis: "Fusion", rida: 234503, gamybos_metai: 2004 },
+  { marke: "Ford", modelis: "Focus", rida: 105002, gamybos_metai: 2012 },
+  { marke: "Ford", modelis: "Fiesta", rida: 295034, gamybos_metai: 2000 },
+];
+
+for (const auto of automobilis12) {
+  console.log("Automobilis:", auto.marke, auto.modelis);
+  console.log("Pagamintas:", auto.gamybos_metai);
+  console.log(
+    "Amzius:",
+    new Date(Date.now()).getFullYear() - auto.gamybos_metai,
+    "\n"
+  );
+}
+
+// 14.
+console.log("\n-- 14 --\n");
+
+let imones = [
+  {
+    pavadinimas: "AB Bedarbiai",
+    ikurta: 1980,
+    darbuotoju_skaicius: 5000,
+    pelnas: 0,
+  },
+  {
+    pavadinimas: "UAB vagys",
+    ikurta: 1780,
+    darbuotoju_skaicius: 35,
+    pelnas: 500345,
+  },
+  {
+    pavadinimas: "UAB Parduotuve",
+    ikurta: 1960,
+    darbuotoju_skaicius: 100,
+    pelnas: 301000,
+  },
+];
+
+for (const imone of imones) {
+  console.log(
+    "Imone",
+    imone.pavadinimas,
+    "buvo ikurta",
+    imone.ikurta,
+    "metais, siuo metu turi",
+    imone.darbuotoju_skaicius,
+    "darbuotoju ir metinis pelnas yra",
+    imone.pelnas,
+    "Eur."
+  );
+}
+console.log("Vidutinis bendras imoniu amzius:");
+vidurkis = 0;
+for (const imone of imones) {
+  vidurkis += new Date(Date.now()).getFullYear() - imone.ikurta;
+}
+console.log(vidurkis / imones.length);
+
+console.log("Vidutinis bendras imoniu pelnas:");
+vidurkis = 0;
+for (const imone of imones) {
+  vidurkis += imone.pelnas;
+}
+console.log(vidurkis / imones.length);
+
+console.log("Vidutinis bendras imoniu darbuotuju kiekis:");
+vidurkis = 0;
+for (const imone of imones) {
+  vidurkis += imone.darbuotoju_skaicius;
+}
+console.log(vidurkis / imones.length);
+
+// 15.
+console.log("\n-- 15 --\n");
+
+let ligonines = [
+  {
+    pavadinimas: "Gariunu ligonine",
+    adresas: "Gariunu g. 70, Vilnius",
+    lankytoju_skaicius: 200,
+    darbuotoju_skaicius: 20,
+  },
+  {
+    pavadinimas: "Buržuazijos ligonine",
+    adresas: "Turtuoliu g. 2, Turtmiestis",
+    lankytoju_skaicius: 50,
+    darbuotoju_skaicius: 80,
+  },
+  {
+    pavadinimas: "Piliakalnio ligonine",
+    adresas: "Pilies g. 40A, Piliamiestis",
+    lankytoju_skaicius: 92,
+    darbuotoju_skaicius: 15,
+  },
+];
+
+for (const ligonine of ligonines) {
+  console.log(ligonine.pavadinimas, ",", ligonine.adresas);
+}
+
+console.log("Bendras lankytoju skaicius:");
+let suma = 0;
+for (const ligonine of ligonines) {
+  suma += ligonine.lankytoju_skaicius;
+}
+console.log(suma);
+
+console.log("Bendras darbuotoju skaicius:");
+suma = 0;
+for (const ligonine of ligonines) {
+  suma += ligonine.darbuotoju_skaicius;
+}
+console.log(suma);
+
+// 16.
+console.log("\n-- 16 --\n");
+
+let studentai16 = [
+  {
+    vardas: "Vardenis",
+    pavarde: "Pavardenis",
+    amzius: 18,
+    pazymiai: [1, 2, 3, 9, 8, 7, 5, 5],
+    studiju_programa: "Teorine Fizika",
+    kursas: 1,
+  },
+  {
+    vardas: "Gutuinas",
+    pavarde: "Tokorenkas",
+    amzius: 26,
+    pazymiai: [8, 9, 8, 9, 8, 9, 8, 9],
+    studiju_programa: "Lietuvos istorija",
+    kursas: 2,
+  },
+  {
+    vardas: "Zitainas",
+    pavarde: "Bepirstis",
+    amzius: 24,
+    pazymiai: [10, 7, 5, 5, 9, 8, 5, 9],
+    studiju_programa: "Ekonomika",
+    kursas: 1,
+  },
+];
+
+vidurkis = 0;
+
+for (const studentas of studentai16) {
+  console.log(
+    studentas.vardas,
+    studentas.pavarde,
+    studentas.amzius,
+    "metu",
+    studentas.studiju_programa,
+    ", kursas",
+    studentas.kursas
+  );
+  console.log("paazymiai:", ...studentas.pazymiai);
+
+  studentas.vidurkis =
+    studentas.pazymiai.reduce((viso, pazymis) => {
+      return viso + pazymis;
+    }) / studentas.pazymiai.length;
+
+  vidurkis += studentas.vidurkis;
+
+  console.log("vidurkis:", studentas.vidurkis);
+  console.log("--------");
+}
+
+console.log("bendras vidurkis:", vidurkis / studentai16.length);
+
+// 17.
+console.log("\n-- 17 --\n");
+
+let parduotuve = {
+  pavadinimas: "Parduotuve",
+  adresas: "kaimo g. 5, kaimas",
+  darbuotoju_skaicius: 2,
+  prekes: [
+    {
+      pavadinimas: "Alus",
+      kodas: "OIJFE09432",
+      kaina: 1.99,
+      savikaina: 1.09,
+      kiekis: 300,
+    },
+    {
+      pavadinimas: "Eserys",
+      kodas: "OIFFE09001",
+      kaina: 10,
+      savikaina: 6,
+      kiekis: 50,
+    },
+    {
+      pavadinimas: "Degtine",
+      kodas: "DDINE09470",
+      kaina: 20,
+      savikaina: 12,
+      kiekis: 500,
+    },
+  ],
+};
+
+console.log(parduotuve);
+suma = 0;
+let pavadinimas = parduotuve.prekes[0].pavadinimas;
+let kiekis = parduotuve.prekes[0].kiekis;
+
+for (const preke of parduotuve.prekes) {
+  console.log(
+    preke.pavadinimas,
+    ", kainuoja (Eur):",
+    preke.kaina,
+    ",Turimas kiekis:",
+    preke.kiekis
+  );
+  suma += preke.kiekis;
+
+  if (preke.kiekis > kiekis) {
+    kiekis = preke.kiekis;
+    pavadinimas = preke.pavadinimas;
+  }
+}
+console.log("Visu prekiu kiekis:", suma);
+console.log("Daugiausiai prekiu yra", pavadinimas);
