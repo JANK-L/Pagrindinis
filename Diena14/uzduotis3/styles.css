@@ -1,0 +1,115 @@
+body {
+  width: 1440px;
+  margin: auto;
+  background: #d4f1e6;
+}
+.container {
+  padding: 121px 150px 126px;
+}
+h1 {
+  width: 1121px;
+  height: 172px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 120%;
+  /* or 86px */
+
+  color: #1f1f1f;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 40px 43.2414px;
+
+  width: 1140px;
+  height: 952px;
+}
+
+.images img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 62.8966px;
+}
+.images img:first-child {
+  width: 428.48px;
+  height: 456px;
+}
+
+.images img:nth-child(2) {
+  width: 668.28px;
+  height: 448.14px;
+}
+.images img:nth-child(3) {
+  width: 680.07px;
+  height: 456px;
+}
+.images img:nth-child(4) {
+  width: 412.76px;
+  height: 456px;
+}
+.content img {
+  width: 342px;
+  height: 532px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+  margin-right: 60px;
+}
+
+.content {
+  /* Frame 12 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 59px 0 126px;
+  padding-top: 56px;
+  gap: 16px;
+
+  width: 1136px;
+
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.text h2 {
+  width: 600px;
+  height: 96px;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+
+  color: #1f1f1f;
+}
+.text p {
+  /* Photography is the art of freezing moments in time, capturing the beauty and essence of the world around us with a single click. It's a visual language that transcends words, enabling us to convey emotions, tell stories, and preserve memories. Through the lens of a camera, photographers become storytellers, framing the world through their unique perspectives. Whether it's the play of light and shadow, the candid expressions of people, or the breathtaking landscapes of nature, photography has the power to evoke powerful emotions, inspire curiosity, and foster a deeper appreciation for the wonders of our world. It's a medium that invites us to see the extraordinary in the ordinary, to celebrate the fleeting, and to leave a lasting imprint of our experiences for generations to come. */
+
+  width: 570px;
+  height: 420px;
+  padding: 0;
+  margin: 16px 0 56px 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #1f1f1f;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

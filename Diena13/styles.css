@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+.container {
+  margin: 0 25px 0 25px;
+}
+
+header {
+  background-color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: white;
+
+  padding: 10px;
+}
+header * {
+  padding: 0px;
+  margin: 0px;
+}
+header li {
+  display: inline;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.sect1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(148, 221, 40);
+  height: 350px;
+}
+.sect1 h1 {
+  margin: 0;
+}
+.sect1 button {
+  border: 2px solid black;
+  width: 90px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+.sect1 button:hover {
+  background-color: rgb(148, 221, 40);
+  color: black;
+}
+
+.sect2 {
+  background-color: rgb(58, 247, 115);
+  padding: 1px;
+}
+
+.sect3 {
+  background-color: rgb(248, 190, 172);
+}
+
+.sect3 > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sect3 > .container > .straipsnis {
+  min-width: 200px;
+  width: calc(90% / 3 - 25px);
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+}
+
+footer .container div {
+  width: calc(100% / 3);
+}

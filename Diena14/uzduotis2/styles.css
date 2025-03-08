@@ -1,0 +1,238 @@
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+.container {
+  margin: 0 60px;
+}
+
+header {
+  background-image: url(BgImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 689px;
+  display: flex;
+  flex-direction: column;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header h1 {
+  width: 856px;
+  height: 122px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #ffffff;
+  margin-bottom: 78px;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header button {
+  /* Frame 8 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+
+  width: 195px;
+  height: 55px;
+
+  background: #e12e60;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px;
+
+  height: 127px;
+}
+
+ul {
+  width: 627px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.navbar a {
+  height: 46px;
+}
+.navbar a,
+.navbar button {
+  text-decoration: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-variant: all-small-caps;
+
+  color: #ffffff;
+}
+
+.sect1 {
+  background-color: #ef5d69;
+  padding: 68px 0px;
+}
+.sect1 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 60px;
+
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+.sect1 p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+
+  color: #000000;
+}
+.sect1 p:first-child {
+  width: 540px;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+.sect1 p:nth-child(2) {
+  /* Dolor nisi dictum in enim aliquet erat ornare libero. Fusce in ut enim amet volutpat auctor viverra pellentesque nulla. Amet accumsan dui sagittis nunc cras ut odio consectetur. In phasellus arcu nullam odio enim in eget. Sagittis purus urna ullamcorper massa sit blandit pellentesque. */
+
+  width: 260px;
+  height: 242px;
+
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+.sect1 p:nth-child(3) {
+  /* Dolor nisi dictum in enim aliquet erat ornare libero. Fusce in ut enim amet volutpat auctor viverra pellentesque nulla. Amet accumsan dui sagittis nunc cras ut odio consectetur. In phasellus arcu nullam odio enim in eget. Sagittis purus urna ullamcorper massa sit blandit pellentesque. */
+
+  width: 321px;
+  height: 154px;
+
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+.sect2 {
+  width: 1440px;
+  height: 869px;
+
+  background: #fcdfe1;
+}
+
+.sect2 .container {
+  margin: 0px 98px;
+  padding: 127px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.sect2 .text {
+  width: 399px;
+  height: 614px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sect2 p {
+  /* Art is a boundless realm of human expression, where creativity knows no bounds. It is a tapestry woven from the threads of imagination and skill, manifesting in myriad forms - from the bold strokes of a painter's canvas to the delicate intricacies of a sculptor's chisel. Art is a universal language that transcends barriers, allowing us to communicate our emotions, thoughts, and experiences with depth and nuance. It challenges our perspectives, stirs our emotions, and prompts us to question the world around us. In its many hues and shapes, art reflects the human condition, celebrating the diversity and complexity of our existence while inviting us to explore the profound connections that bind us all. */
+
+  width: 299px;
+  height: 484px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+.sect2 img {
+  width: 805px;
+  height: 614px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+  gap: 8px;
+
+  background: #000000;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  margin: 0;
+  width: 93px;
+  height: 81px;
+}
+footer .text {
+  width: 94px;
+  height: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+footer .social {
+  display: flex;
+  gap: 16px;
+}
