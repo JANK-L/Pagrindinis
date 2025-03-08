@@ -1,78 +1,85 @@
+html,
 body {
-  background-color: bisque;
+  margin: 0;
+  padding: 0;
 }
 
-body > div {
-  background: white;
-  padding: 2em;
-  margin: 5em;
+body {
+  background-color: #356b8f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-textarea {
+.calculator {
   width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 10px;
+}
+.calculator .input-row {
+  position: relative;
 }
 
-#tryliktas .parametrai {
-  display: flex;
-  margin-bottom: 2em;
+.calculator .input-row span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 1em;
 }
-
-#tryliktas .parametrai .parametras {
-  width: 20%;
-  padding: 5px 10px;
-}
-
-#tryliktas #div-keitimui {
-  width: 100px;
-  height: 100px;
-  background-color: burlywood;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#keturioliktas textarea {
-  background-color: #ececec;
-  border: 1px solid #bebebe;
-}
-
-#sesioliktas .skirtukas {
-  border: 1px dotted grey;
+.calculator .input-row input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2em;
+  text-align: right;
   padding: 1em;
+  background-color: #eeeeee;
+  border: 1px solid #b1b1b1;
 }
 
-#sesioliktas .skirtukas#antras-skirtukas {
-  display: none;
-}
-
-#septynioliktas #perjungti-tekstas {
-  display: none;
-}
-
-#astuonioliktas #kitas-perjungti-tekstas {
-  display: none;
-}
-
-.blokelis {
-  padding: 10px 5px;
-  margin: 5px 0;
-  border: 1px solid black;
-}
-
-#modal {
-  background-color: lightslategray;
-  width: 50%;
-  height: 50%;
-  position: fixed;
-  left: 25%;
-  top: 25%;
-
+.calculator .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+.calculator .buttons button {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 2em;
+  border: none;
+  background-color: #9dd8ff;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
 
+.calculator .buttons button:hover {
+  background-color: #3876a0;
+  color: white;
+}
+
+#hide-history {
   display: none;
-  padding: 15px;
+}
+
+.history-buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #9dd8ff;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+
+.history-buttons button {
+  width: 50%;
+  box-sizing: border-box;
+
+  font-size: 1em;
+  border: none;
+  background-color: #fa770b;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+.history-items {
+  display: none;
 }
