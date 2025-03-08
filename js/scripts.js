@@ -1,617 +1,493 @@
-// uzduotys 1/6
-
 // 1.
 console.log("\n-- 01 --\n");
+{
+  function spausdinti_varda() {
+    console.log("Vardenis Pavardenis \nPasirinktas progrmavimas siaip sau\n");
+  }
 
-let studentas = {
-  vardas: "Vardenis",
-  pavarde: "Pavardenis",
-  amzius_m: 99,
-  ugis_m: 1.11,
-  kursas: 2,
-  mokykla: "Krantuske",
-};
-
-console.log(studentas);
-
+  spausdinti_varda();
+  spausdinti_varda();
+  spausdinti_varda();
+}
 // 2.
 console.log("\n-- 02 --\n");
 
-let filmas = {};
+{
+  function eilerastis() {
+    console.log(
+      `Švelniai vėjas neša svajones,
+Toli matosi mėlynas dangus.
+Tyliai šnabžda medžiai paslaptis,
+Ir širdyje gieda paukščiai rytą.
+Pasaulis kupinas stebuklų ir tylos.\n`
+    );
+  }
 
-filmas.pavadinimas = "The Matrix";
-filmas.rezisierius = "Lana Wachowski";
-filmas.biudzetas_Eur = 30;
-filmas.uzdarbis_Eur = 50;
-filmas.zanras = "Action";
-filmas.trukme = "2h 16m";
-filmas.isleidimo_metai = 1999;
-filmas.aktoriu_sarasas = [
-  "Keanu Reeves",
-  "Laurence Fishburne",
-  "Carrie-Anne Moss",
-];
-
-console.log(filmas);
-console.log("Pelnas:", filmas.uzdarbis_Eur - filmas.biudzetas_Eur);
-console.log("dalivavo aktoriu:", filmas.aktoriu_sarasas.length);
-console.log(
-  "filmui metu yra:",
-  new Date(Date.now()).getFullYear() - filmas.isleidimo_metai
-);
+  eilerastis();
+  eilerastis();
+  eilerastis();
+  eilerastis();
+  eilerastis();
+}
 
 // 3.
 console.log("\n-- 03 --\n");
 
-let knygos = [{}, {}];
-
-knygos[0].pavadinimas = "Nusikaltimas ir bausme";
-knygos[0].autorius = "Fiodoro Dostojevskio";
-knygos[0].zanras = "Psichologinis romanas";
-knygos[0].kaina = 13.9;
-knygos[0].puslapiu_kiekis = 576;
-knygos[0].skyriu_sarasas = [
-  "Pirmoji dalis",
-  "Antroji dalis",
-  "Trečioji dalis",
-  "Ketvirtoji dalis",
-  "Penktos dalis",
-  "Šeštoji dalis",
-  "Epilogas",
-];
-knygos[0].isleidimo_metai = 1866;
-knygos[0].ar_yra_knygynuose = true;
-
-knygos[1].pavadinimas = "1984";
-knygos[1].autorius = "George'as Orwellas";
-knygos[1].zanras = "Distopinis romanas";
-knygos[1].kaina = 15;
-knygos[1].puslapiu_kiekis = 328;
-knygos[1].skyriu_sarasas = [
-  "Pirmoji dalis",
-  "Antroji dalis",
-  "Trečioji dalis",
-  "Epilogas",
-];
-knygos[1].isleidimo_metai = 1949;
-knygos[1].ar_yra_knygynuose = true;
-
-console.log(knygos);
-
-if (knygos[0].puslapiu_kiekis > knygos[1].puslapiu_kiekis) {
-  console.log("Knyga", knygos[1].pavadinimas, "yra plonesne.");
-} else console.log("Knyga", knygos[0].pavadinimas, "yra plonesne.");
-
-if (knygos[0].skyriu_sarasas.length > knygos[1].skyriu_sarasas.length) {
-  console.log("Knyga", knygos[1].pavadinimas, "turi maziau skyriu.");
-} else console.log("Knyga", knygos[0].pavadinimas, "turi maziau skyriu.");
-
-if (knygos[0].kaina > knygos[1].kaina) {
-  let newKaina = knygos[1].kaina * 2;
-  if (newKaina > knygos[0].kaina) {
-    console.log(
-      "Padidinus",
-      knygos[1].pavadinimas,
-      " kaina 2 katus, butu brangesne uz kita knyga"
-    );
-  } else {
-    console.log(
-      "Padidinus",
-      knygos[1].pavadinimas,
-      " kaina 2 katus, nebutu brangesne uz kita knyga"
-    );
+{
+  function spausdinti_teksta1() {
+    console.log("vienos funkcijos tekstas.");
   }
-} else {
-  let newKaina = knygos[0].kaina * 2;
-  if (newKaina > knygos[1].kaina) {
-    console.log(
-      "Padidinus",
-      knygos[0].pavadinimas,
-      "kaina 2 katus, butu brangesne uz kita knyga"
-    );
-  } else {
-    console.log(
-      "Padidinus",
-      knygos[0].pavadinimas,
-      "kaina 2 katus, nebutu brangesne uz kita knyga"
-    );
+  function spausdinti_teksta2() {
+    console.log("kitos funkcijos tekstas.");
   }
+  function spausdinti_teksta3() {
+    console.log("trecio funkcijos tekstas.");
+  }
+
+  spausdinti_teksta1();
+  spausdinti_teksta2();
+  spausdinti_teksta3();
 }
 
 // 4.
 console.log("\n-- 04 --\n");
 
-let prekes = [{}, {}, {}];
-
 {
-  prekes[0].pavadinimas = "Anglys";
-  prekes[0].kaina_Eur = 30;
-  prekes[0].savikaina_Eur = 10;
-  prekes[0].kodas = "0001";
-  prekes[0].kiekis_sandelyje = 500;
-  prekes[0].siuntimui_dezes_matmenys_cm = { x: 40, y: 40, z: 60 };
+  function teksto_eile1() {
+    console.log("kazkokia teksto eilute.");
+  }
+  function teksto_eile2() {
+    console.log("kazkokia kitokia tekso eilute.");
+  }
+
+  function teksto_kvietimas() {
+    teksto_eile1();
+    teksto_eile2();
+  }
+
+  teksto_kvietimas();
 }
-
-{
-  prekes[1].pavadinimas = "Lagaminas";
-  prekes[1].kaina_Eur = 249;
-  prekes[1].savikaina_Eur = 220;
-  prekes[1].kodas = "0110";
-  prekes[1].kiekis_sandelyje = 14;
-  prekes[1].siuntimui_dezes_matmenys_cm = { x: 80, y: 60, z: 90 };
-}
-
-{
-  prekes[2].pavadinimas = "Lygintuvas";
-  prekes[2].kaina_Eur = 79;
-  prekes[2].savikaina_Eur = 60;
-  prekes[2].kodas = "1000";
-  prekes[2].kiekis_sandelyje = 38;
-  prekes[2].siuntimui_dezes_matmenys_cm = { x: 20, y: 20, z: 20 };
-}
-
-console.log(prekes);
-
-console.log(
-  "pirma prekė kainuoja:",
-  prekes[0].kaina_Eur,
-  "Eur, Antra prekė kainuoja:",
-  prekes[1].kaina_Eur,
-  "Eur, trecia prekė kainuoja:",
-  prekes[2].kaina_Eur,
-  "Eur\n"
-);
-
-let didKaina = 0;
-if (prekes[0].kaina_Eur > didKaina) {
-  didKaina = prekes[0].kaina_Eur;
-}
-if (prekes[1].kaina_Eur > didKaina) {
-  didKaina = prekes[1].kaina_Eur;
-}
-if (prekes[2].kaina_Eur > didKaina) {
-  didKaina = prekes[2].kaina_Eur;
-}
-didKaina = prekes.findIndex((preke) => preke.kaina_Eur === didKaina);
-
-console.log("Brangiause preke:", prekes[didKaina], "\n");
-
-console.log(
-  "pirmos prekės dezes turis:",
-  prekes[0].siuntimui_dezes_matmenys_cm.x *
-    prekes[0].siuntimui_dezes_matmenys_cm.y *
-    prekes[0].siuntimui_dezes_matmenys_cm.z,
-  "cm^3\nantra prekės dezes turis:",
-  prekes[1].siuntimui_dezes_matmenys_cm.x *
-    prekes[1].siuntimui_dezes_matmenys_cm.y *
-    prekes[1].siuntimui_dezes_matmenys_cm.z,
-  "cm^3\ntrecios prekės dezes turis:",
-  prekes[2].siuntimui_dezes_matmenys_cm.x *
-    prekes[2].siuntimui_dezes_matmenys_cm.y *
-    prekes[2].siuntimui_dezes_matmenys_cm.z,
-  "cm^3\n"
-);
-console.log(
-  "pirmos prekės pelningumas:",
-  (prekes[0].kaina_Eur - prekes[0].savikaina_Eur) * prekes[0].kiekis_sandelyje,
-  "Eur, antros prekės pelningumas:",
-  (prekes[1].kaina_Eur - prekes[1].savikaina_Eur) * prekes[1].kiekis_sandelyje,
-  "Eur, trecios prekės pelningumas:",
-  (prekes[2].kaina_Eur - prekes[2].savikaina_Eur) * prekes[2].kiekis_sandelyje,
-  "Eur\n"
-);
 
 // 5.
 console.log("\n-- 05 --\n");
 
-let automobilis = {};
+{
+  function random_suma() {
+    let a = Math.floor(Math.random() * 100);
+    let b = Math.floor(Math.random() * 100);
+    console.log(a, "+", b, "=", a + b);
+  }
 
-automobilis.marke = "Ford";
-automobilis.modelis = "Fusion";
-automobilis.rida = 234503;
-automobilis.gamybos_metai = 2004;
-automobilis.spalva = "Ochrine";
-automobilis.darbinis_turis = 1.4;
-automobilis.ar_dauzta = true;
-automobilis.ar_parduodama = false;
-
-console.log(automobilis);
-
-let amzius = new Date(Date.now()).getFullYear() - automobilis.gamybos_metai;
-console.log("\nAutomobilio amzius:", amzius, "m");
-console.log(
-  "Vidutiniskai per metus nuvaziuoja:",
-  parseInt(automobilis.rida / amzius),
-  "Km"
-);
+  random_suma();
+}
 
 // 6.
 console.log("\n-- 06 --\n");
 
-let kruopos = [
-  {
-    pavadinimas: "ryziai",
-    pagaminta: 1998,
-    galiojimas: 1,
-    kaina: 1.19,
-    kiekis: 300,
-  },
-  {
-    pavadinimas: "grikiai",
-    pagaminta: 2025,
-    galiojimas: 1,
-    kaina: 28.99,
-    kiekis: 33,
-  },
-];
+{
+  function pateikti_informacija() {
+    console.log(
+      policinikas.vardas,
+      policinikas.pavarde,
+      "gauna",
+      policinikas.alga,
+      "Eur atligi. Dirba",
+      policinikas.etatas,
+      "ateta ir yra",
+      policinikas.amzius,
+      "metu"
+    );
+  }
 
-console.log(kruopos);
+  let policinikas = {
+    vardas: "Vardenis",
+    pavarde: "Pavardenis",
+    amzius: 99,
+    alga: 800,
+    etatas: 0.75,
+  };
 
-console.log("Baigs galioti:");
-console.log(
-  kruopos[0].pavadinimas,
-  "baigs galioti",
-  kruopos[0].pagaminta + kruopos[0].galiojimas
-);
-console.log(
-  kruopos[1].pavadinimas,
-  "baigs galioti",
-  kruopos[1].pagaminta + kruopos[1].galiojimas
-);
-
-let data = new Date(Date.now()).getFullYear();
-
-console.log("\nAr dar galioja:");
-let galioja =
-  kruopos[0].pagaminta + kruopos[0].galiojimas - data > 0
-    ? "Galioja"
-    : "Negalioja";
-
-console.log(kruopos[0].pavadinimas, galioja);
-galioja =
-  kruopos[1].pagaminta + kruopos[1].galiojimas - data > 0
-    ? "Galioja"
-    : "Negalioja";
-
-console.log(kruopos[1].pavadinimas, galioja);
-
-// uzduotys 1/2
+  pateikti_informacija();
+}
 
 // 7.
 console.log("\n-- 07 --\n");
 
-let knygynas = {};
+{
+  function random_skaiciu_eile() {
+    let a = [];
 
-knygynas.pavadinimas = "Pegasas";
-knygynas.adresas = "Prastoji g. 1, Vilnius";
-knygynas.plotas_m2 = 28;
-knygynas.knygu_kiekis = 200;
-knygynas.darbo_valandos = 8;
-knygynas.ar_atidarytas = false;
+    while (a.length != 10) {
+      a.push(Math.floor(Math.random() * 100));
+    }
 
-for (raktas in knygynas) {
-  console.log(raktas, ":", knygynas[raktas]);
-}
+    console.log(...a);
+  }
 
-console.log();
-
-for (raktas in knygynas) {
-  if (typeof knygynas[raktas] != "string")
-    console.log(raktas, ":", knygynas[raktas]);
+  random_skaiciu_eile();
+  random_skaiciu_eile();
+  random_skaiciu_eile();
+  random_skaiciu_eile();
+  random_skaiciu_eile();
 }
 
 // 8.
 console.log("\n-- 08 --\n");
 
-let studentai = [
-  {
-    vardas: "Vardenis",
-    pavarde: "Pavardenis",
-    studiju_programa: "Banginiu prieziura",
-    pazymiai: [6, 6, 6, 7, 6, 5, 5],
-  },
-  {
-    vardas: "Genadijus",
-    pavarde: "Stucman",
-    studiju_programa: "Pramogu industrija",
-    pazymiai: [5, 10, 6, 7, 7, 5, 5],
-  },
-];
-
-let vidurkis = [0, 0];
-
-for (let i = 0; i < studentai.length; i++) {
-  for (const pazymys of studentai[i].pazymiai) {
-    vidurkis[i] += pazymys;
+{
+  function random_sveikas_print() {
+    console.log(Math.floor(Math.random() * 100));
   }
-  vidurkis[i] /= studentai[i].pazymiai.length;
-  vidurkis[i] = Number(vidurkis[i].toFixed(2));
-}
 
-console.log(studentai);
-console.log("vidurkiai:", vidurkis);
+  for (let i = 0; i < 10; i++) {
+    random_sveikas_print();
+  }
+}
 
 // 9.
 console.log("\n-- 09 --\n");
 
-let preke = {
-  pavadinimas: "Valtis",
-  kaina: 400,
-  kaina_be_PVM: function () {
-    let kainaBePVM = this.kaina * 0.79;
-    return kainaBePVM;
-  },
-};
-console.log(preke);
-console.log("kaina be PVM:", preke.kaina_be_PVM());
+{
+  function pasisveikinimas(vardas) {
+    console.log("Labas,", vardas);
+  }
+  function atsisveikinimas(vardas) {
+    console.log("Viso gero,", vardas);
+  }
+
+  let vardas = "Vardenis";
+
+  pasisveikinimas(vardas);
+  atsisveikinimas(vardas);
+}
 
 // 10.
 console.log("\n-- 10 --\n");
 
-let reservacija = {
-  restoranas: "Ale Italiano",
-  kaina: 25,
-  laisvu_vietu: 21,
-  rezervuoti_viska: function () {
-    console.log(
-      "Reservavus visas vietas, kainuotu:",
-      this.kaina * this.laisvu_vietu
-    );
-  },
-};
-console.log(reservacija);
-reservacija.rezervuoti_viska();
+{
+  function didesnis(a, b) {
+    if (a === b) console.log("skaiciai", a, "ir", b, "yra lygus");
+    else if (a > b) console.log("didesnis a:", a);
+    else console.log("didesnis b:", b);
+  }
+
+  didesnis(432, 64);
+  didesnis(2, 2);
+  didesnis(642, 9532);
+  didesnis(2, 43);
+  didesnis(-1, -64);
+}
 
 // 11.
 console.log("\n-- 11 --\n");
 
-let knygos11 = [
-  { pavadinimas: "Knyga be vardo", autorius: "Be autoriaus", kaina: 5 },
-  { pavadinimas: "Paprasta knyga", autorius: "Nezinoma", kaina: 10 },
-];
+{
+  function autombilio_info(marke, modelis, metai, turis) {
+    console.log(
+      marke,
+      modelis,
+      "yra pagamintas",
+      metai,
+      "metais ir turi",
+      turis,
+      "L varykli."
+    );
+  }
 
-console.log(knygos11[0]);
-console.log("Antros knygos autorius:", knygos11[1].autorius);
+  autombilio_info("Ford", "Fusion", 2004, 1.4);
+  autombilio_info("Toyota", "corola verso", 2007, 2.2);
+}
 
 // 12.
 console.log("\n-- 12 --\n");
 
-let Prekes12 = [
-  { pavadinimas: "A55 5G", gamintojas: "SAMSUNG", kaina: 350 },
-  { pavadinimas: "C5", gamintojas: "POCO", kaina: 70 },
-  { pavadinimas: "P40", gamintojas: "HUAWEI", kaina: 150 },
-];
-for (const preke of Prekes12) {
-  console.log(preke.gamintojas, preke.pavadinimas, "Kaina:", preke.kaina);
+{
+  function suma(a, b) {
+    console.log(a, "+", b, "=", a + b);
+  }
+  function skirtumas(a, b) {
+    console.log(a, "-", b, "=", a - b);
+  }
+  function sandauga(a, b) {
+    console.log(a, "*", b, "=", a * b);
+  }
+  function dalmuo(a, b) {
+    console.log(a, "/", b, "=", a / b);
+  }
+
+  function random_skaiciu_veiksmai() {
+    let a = Math.floor(Math.random() * 100);
+    let b = Math.floor(Math.random() * 100);
+    suma(a, b);
+    skirtumas(a, b);
+    sandauga(a, b);
+    dalmuo(a, b);
+    console.log();
+  }
+
+  random_skaiciu_veiksmai();
+  random_skaiciu_veiksmai();
+  random_skaiciu_veiksmai();
+  random_skaiciu_veiksmai();
 }
 
 // 13.
 console.log("\n-- 13 --\n");
 
-let automobilis12 = [
-  { marke: "Ford", modelis: "Fusion", rida: 234503, gamybos_metai: 2004 },
-  { marke: "Ford", modelis: "Focus", rida: 105002, gamybos_metai: 2012 },
-  { marke: "Ford", modelis: "Fiesta", rida: 295034, gamybos_metai: 2000 },
-];
+{
+  function masyvo_info(masyvas) {
+    masyvas.forEach((elementas) => {
+      console.log(elementas, elementas.length);
+    });
+  }
 
-for (const auto of automobilis12) {
-  console.log("Automobilis:", auto.marke, auto.modelis);
-  console.log("Pagamintas:", auto.gamybos_metai);
-  console.log(
-    "Amzius:",
-    new Date(Date.now()).getFullYear() - auto.gamybos_metai,
-    "\n"
-  );
+  let zodziai = ["klasdsa", "dsagsag", "asfsaf", "asdas", "asgsaf", "ads"];
+
+  masyvo_info(zodziai);
 }
 
 // 14.
 console.log("\n-- 14 --\n");
 
-let imones = [
-  {
-    pavadinimas: "AB Bedarbiai",
-    ikurta: 1980,
-    darbuotoju_skaicius: 5000,
-    pelnas: 0,
-  },
-  {
-    pavadinimas: "UAB vagys",
-    ikurta: 1780,
-    darbuotoju_skaicius: 35,
-    pelnas: 500345,
-  },
-  {
-    pavadinimas: "UAB Parduotuve",
-    ikurta: 1960,
-    darbuotoju_skaicius: 100,
-    pelnas: 301000,
-  },
-];
+{
+  function skaicius_kvadratas(masyvas) {
+    masyvas.forEach((elementas) => {
+      console.log(elementas, elementas ** 2, elementas / 2);
+    });
+  }
 
-for (const imone of imones) {
-  console.log(
-    "Imone",
-    imone.pavadinimas,
-    "buvo ikurta",
-    imone.ikurta,
-    "metais, siuo metu turi",
-    imone.darbuotoju_skaicius,
-    "darbuotoju ir metinis pelnas yra",
-    imone.pelnas,
-    "Eur."
-  );
-}
-console.log("Vidutinis bendras imoniu amzius:");
-vidurkis = 0;
-for (const imone of imones) {
-  vidurkis += new Date(Date.now()).getFullYear() - imone.ikurta;
-}
-console.log(vidurkis / imones.length);
+  let skacius_masyvas1 = [23, 532, 532, 8, 76, 856];
+  let skacius_masyvas2 = [23532, 5, 21, 5, 6, 0, 8, 1];
 
-console.log("Vidutinis bendras imoniu pelnas:");
-vidurkis = 0;
-for (const imone of imones) {
-  vidurkis += imone.pelnas;
+  skaicius_kvadratas(skacius_masyvas1);
+  skaicius_kvadratas(skacius_masyvas2);
 }
-console.log(vidurkis / imones.length);
-
-console.log("Vidutinis bendras imoniu darbuotuju kiekis:");
-vidurkis = 0;
-for (const imone of imones) {
-  vidurkis += imone.darbuotoju_skaicius;
-}
-console.log(vidurkis / imones.length);
 
 // 15.
 console.log("\n-- 15 --\n");
 
-let ligonines = [
-  {
-    pavadinimas: "Gariunu ligonine",
-    adresas: "Gariunu g. 70, Vilnius",
-    lankytoju_skaicius: 200,
-    darbuotoju_skaicius: 20,
-  },
-  {
-    pavadinimas: "Buržuazijos ligonine",
-    adresas: "Turtuoliu g. 2, Turtmiestis",
-    lankytoju_skaicius: 50,
-    darbuotoju_skaicius: 80,
-  },
-  {
-    pavadinimas: "Piliakalnio ligonine",
-    adresas: "Pilies g. 40A, Piliamiestis",
-    lankytoju_skaicius: 92,
-    darbuotoju_skaicius: 15,
-  },
-];
+{
+  function studento_info(pazymiai, vardas, pavarde) {
+    console.log(vardas, pavarde);
+    console.log("Pazymiai:", ...pazymiai);
 
-for (const ligonine of ligonines) {
-  console.log(ligonine.pavadinimas, ",", ligonine.adresas);
-}
+    let vidurkis =
+      pazymiai.reduce((a, b) => {
+        return a + b;
+      }) / pazymiai.length;
+    console.log("Vidurkis:", vidurkis);
+  }
 
-console.log("Bendras lankytoju skaicius:");
-let suma = 0;
-for (const ligonine of ligonines) {
-  suma += ligonine.lankytoju_skaicius;
-}
-console.log(suma);
+  let studentas = {
+    vardas: "Vardenis",
+    pavarde: "Pavardenis",
+    pazymiai: [10, 4, 6, 3, 2, 6, 9, 9, 6],
+  };
 
-console.log("Bendras darbuotoju skaicius:");
-suma = 0;
-for (const ligonine of ligonines) {
-  suma += ligonine.darbuotoju_skaicius;
+  studento_info(studentas.pazymiai, studentas.vardas, studentas.pavarde);
 }
-console.log(suma);
 
 // 16.
 console.log("\n-- 16 --\n");
 
-let studentai16 = [
-  {
-    vardas: "Vardenis",
-    pavarde: "Pavardenis",
-    amzius: 18,
-    pazymiai: [1, 2, 3, 9, 8, 7, 5, 5],
-    studiju_programa: "Teorine Fizika",
-    kursas: 1,
-  },
-  {
-    vardas: "Gutuinas",
-    pavarde: "Tokorenkas",
-    amzius: 26,
-    pazymiai: [8, 9, 8, 9, 8, 9, 8, 9],
-    studiju_programa: "Lietuvos istorija",
-    kursas: 2,
-  },
-  {
-    vardas: "Zitainas",
-    pavarde: "Bepirstis",
-    amzius: 24,
-    pazymiai: [10, 7, 5, 5, 9, 8, 5, 9],
-    studiju_programa: "Ekonomika",
-    kursas: 1,
-  },
-];
+{
+  function didziausias(masyvas) {
+    let didziausias = masyvas[0];
+    masyvas.forEach((skaicius) => {
+      if (skaicius > didziausias) didziausias = skaicius;
+    });
+    console.log("Didziausias", didziausias);
+  }
 
-vidurkis = 0;
+  function uzpildyti(masyvas, kiek) {
+    for (let i = 0; i < kiek; i++) {
+      masyvas.push(Math.floor(Math.random() * 100));
+    }
+  }
 
-for (const studentas of studentai16) {
-  console.log(
-    studentas.vardas,
-    studentas.pavarde,
-    studentas.amzius,
-    "metu",
-    studentas.studiju_programa,
-    ", kursas",
-    studentas.kursas
-  );
-  console.log("paazymiai:", ...studentas.pazymiai);
+  let skaiciuMasyvai = [[], [], []];
+  uzpildyti(skaiciuMasyvai[0], 10);
+  uzpildyti(skaiciuMasyvai[1], 12);
+  uzpildyti(skaiciuMasyvai[2], 5);
 
-  studentas.vidurkis =
-    studentas.pazymiai.reduce((viso, pazymis) => {
-      return viso + pazymis;
-    }) / studentas.pazymiai.length;
-
-  vidurkis += studentas.vidurkis;
-
-  console.log("vidurkis:", studentas.vidurkis);
-  console.log("--------");
+  console.log(skaiciuMasyvai);
+  didziausias(skaiciuMasyvai[0]);
+  didziausias(skaiciuMasyvai[1]);
+  didziausias(skaiciuMasyvai[2]);
 }
-
-console.log("bendras vidurkis:", vidurkis / studentai16.length);
 
 // 17.
 console.log("\n-- 17 --\n");
 
-let parduotuve = {
-  pavadinimas: "Parduotuve",
-  adresas: "kaimo g. 5, kaimas",
-  darbuotoju_skaicius: 2,
-  prekes: [
-    {
-      pavadinimas: "Alus",
-      kodas: "OIJFE09432",
-      kaina: 1.99,
-      savikaina: 1.09,
-      kiekis: 300,
-    },
-    {
-      pavadinimas: "Eserys",
-      kodas: "OIFFE09001",
-      kaina: 10,
-      savikaina: 6,
-      kiekis: 50,
-    },
-    {
-      pavadinimas: "Degtine",
-      kodas: "DDINE09470",
-      kaina: 20,
-      savikaina: 12,
-      kiekis: 500,
-    },
-  ],
-};
+{
+  function sakinys() {
+    return "mano sakinys yra sitas.";
+  }
 
-console.log(parduotuve);
-suma = 0;
-let pavadinimas = parduotuve.prekes[0].pavadinimas;
-let kiekis = parduotuve.prekes[0].kiekis;
+  console.log(sakinys());
+}
 
-for (const preke of parduotuve.prekes) {
-  console.log(
-    preke.pavadinimas,
-    ", kainuoja (Eur):",
-    preke.kaina,
-    ",Turimas kiekis:",
-    preke.kiekis
-  );
-  suma += preke.kiekis;
+// 18.
+console.log("\n-- 18 --\n");
 
-  if (preke.kiekis > kiekis) {
-    kiekis = preke.kiekis;
-    pavadinimas = preke.pavadinimas;
+{
+  function random_sveikas(max_dydis) {
+    if (isNaN(max_dydis)) return Math.floor(Math.random() * 100);
+    else return Math.floor(Math.random() * max_dydis);
+  }
+  console.log(random_sveikas(10));
+  console.log(random_sveikas());
+  console.log(random_sveikas(10000));
+}
+
+// 19.
+console.log("\n-- 19 --\n");
+
+{
+  function studento_info2(vardas, vidurkis) {
+    return `Studentas ${vardas} turi vidurki ${vidurkis}`;
+  }
+
+  console.log(studento_info2("Vardenis", 9.3));
+  console.log(studento_info2("Kazimeras", 5));
+}
+
+// 20.
+console.log("\n-- 20 --\n");
+
+{
+  function maziausias_dalyklis(skaicius) {
+    let i = 2;
+    while (true) {
+      if (skaicius % i === 0) return i;
+      i++;
+    }
+  }
+
+  for (let i = 10; i <= 30; i++) {
+    console.log(i, ";", maziausias_dalyklis(i));
   }
 }
-console.log("Visu prekiu kiekis:", suma);
-console.log("Daugiausiai prekiu yra", pavadinimas);
+
+// 21.
+console.log("\n-- 21 --\n");
+
+{
+  function ar_pirminis(skaicius) {
+    let i = 2;
+
+    while (true) {
+      if (skaicius % i === 0 && skaicius != i) return false;
+      if (i === skaicius) return true;
+      i++;
+    }
+  }
+
+  for (let i = 2; i <= 15; i++) {
+    console.log(i, ar_pirminis(i));
+  }
+}
+
+// 22.
+console.log("\n-- 22 --\n");
+
+{
+  function suma_is_dvieju(skaiciai) {
+    console.log(skaiciai[0], "+", skaiciai[1], "=", skaiciai[0] + skaiciai[1]);
+  }
+  function suma_is_triju(skaiciai) {
+    console.log(
+      skaiciai[0],
+      "+",
+      skaiciai[1],
+      "+",
+      skaiciai[2],
+      "=",
+      skaiciai[0] + skaiciai[1] + skaiciai[2]
+    );
+  }
+  function dalyba(skaiciai) {
+    console.log(skaiciai[0], "/", skaiciai[1], "=", skaiciai[0] / skaiciai[1]);
+  }
+
+  function sukurti_numerius(kiekis) {
+    let a = [];
+    for (let i = 0; i < kiekis; i++) {
+      a.push(random_sveikas(10));
+    }
+    return a;
+  }
+
+  function isvedimas() {
+    dalyba(sukurti_numerius(2));
+    suma_is_dvieju(sukurti_numerius(2));
+    suma_is_triju(sukurti_numerius(3));
+  }
+  isvedimas();
+}
+
+// 23.
+console.log("\n-- 23 --\n");
+
+{
+  function visu_suma(skaiciai) {
+    return skaiciai.reduce((a, b) => a + b);
+  }
+
+  let skaiciai1 = sukurti_numerius(3);
+  let skaiciai2 = sukurti_numerius(3);
+
+  console.log("Masyvai:\n", skaiciai1, skaiciai2);
+  console.log(visu_suma(skaiciai1));
+  console.log(visu_suma(skaiciai2));
+}
+
+// 24.
+console.log("\n-- 24 --\n");
+
+{
+  function ilgiausias_zodis(zodziai) {
+    let ilgiausias = zodziai[0];
+
+    zodziai.forEach((zodis) => {
+      if (zodis.length > ilgiausias.length) ilgiausias = zodis;
+    });
+
+    return ilgiausias;
+  }
+
+  let zodziai = [
+    "sd",
+    "afdsgdf",
+    "pasikiskekopusteliaudamiesi",
+    "ilgas",
+    "trumpas",
+  ];
+  console.log(ilgiausias_zodis(zodziai), ilgiausias_zodis(zodziai).length);
+}
+
+// 25.
+console.log("\n-- 25 --\n");
+
+{
+  function visi_teigiami(pazymiai) {
+    for (const pazymys of pazymiai) {
+      if (pazymys < 5) return false;
+    }
+    return true;
+  }
+
+  function atsakimas(masyvas) {
+    console.log(masyvas);
+    if (visi_teigiami(masyvas))
+      console.log("Visi studento paymiai yra teigiami.");
+    else console.log("Studentas turi bnt viena neigiama pazymi.");
+  }
+
+  let pazymiai = [[], []];
+  pazymiai[0] = sukurti_numerius(10);
+  pazymiai[1] = sukurti_numerius(10);
+
+  atsakimas(pazymiai[0]);
+  atsakimas(pazymiai[1]);
+}
