@@ -20,11 +20,25 @@ function displayProducts(data) {
     const productDiv = document.createElement("div");
     productDiv.className = "product";
     productDiv.innerHTML = `
-    <img src="${imgLink}" alt="${title}">
-    <p>${title}</p>
-    <button>Perziureti</button>`;
+    <div class="image">
+      <img src="${imgLink}" alt="${title}">
+    </div>
+    <div class="info"><p>${title}</p>
+      <button onclick="showProduct(${product.id})">Perziureti</button>
+    </div>`;
 
     products.appendChild(productDiv);
   }
   document.body.appendChild(products);
+}
+
+async function showProduct(product) {
+  try {
+    const res = await axios.get(
+      "https://fakestoreapi.com/products/" + String(product)
+    );
+    console.log(`https://fakestoreapi.com/products/` + product, res);
+  } catch (error) {
+    console.log(error);
+  }
 }
