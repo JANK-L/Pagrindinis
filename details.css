@@ -2,3 +2,12 @@ body,
 html {
   background-color: rgb(212, 209, 209);
 }
+
+button {
+  background-color: rgb(52, 179, 126);
+  font-weight: bold;
+  color: white;
+  border: none;
+  height: 32px;
+  border-radius: 10px;
+}
