@@ -38,6 +38,16 @@ async function showProduct(product) {
       "https://fakestoreapi.com/products/" + String(product)
     );
     console.log(`https://fakestoreapi.com/products/` + product, res);
+    const productDiv = document.createElement("div");
+    productDiv.className = "product";
+
+    const title = res.data.title;
+    const imgLink = res.data.image;
+
+    document.querySelector(".modal").innerHTML = `
+    <img src="${imgLink}" alt="${title}">
+    <div class="info"><p>${title}</p>
+    </div>`;
   } catch (error) {
     console.log(error);
   }
