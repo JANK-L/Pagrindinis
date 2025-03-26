@@ -1,8 +1,13 @@
 let korteles = document.querySelectorAll(".kortele");
 
+let tekstas = document.querySelector("p");
+
+let reiksme = document.querySelector(".reiksme");
+rezultatas = 0;
+
 let klases = ["pirmas", "antras", "trecias", "ketvirtas", "penktas", "sestas"];
 
-let korteliu_info = [];
+let korteles_info = [];
 
 let pasirinkti = [];
 let pasirinktu_kiekis = 0;
@@ -13,56 +18,91 @@ function supildyti_korteliu_info() {
   while (numeriai.length != 0) {
     let index = Math.floor(Math.random() * numeriai.length);
 
-    korteliu_info.push({
-      korteles_nr: numeriai[index],
-      korteles_statusas: "nepasirinktas",
-      korteles_klase: klases[numeriai[index] - 1],
+    korteles_info.push({
+      numeris: numeriai[index],
+      statusas: "nepasirinktas",
+      klase: klases[numeriai[index] - 1],
     });
     numeriai.splice(index, 1);
   }
-
-  prideti_klase();
 }
 
 function prideti_klase() {
   for (let index = 0; index < korteles.length; index++) {
-    korteles[index].classList.add(korteliu_info[index].korteles_klase);
+    korteles[index].classList.add(korteles_info[index].klase);
   }
 }
 
 supildyti_korteliu_info();
+prideti_klase();
 
 korteles.forEach((kortele, index) => {
   kortele.addEventListener("click", () => {
-    if (korteliu_info[index].korteles_statusas != "nepasirinktas") {
-      return;
-    }
-
-    if (pasirinktu_kiekis === 2) {
-      pasirinktu_kiekis = 0;
-
-      pasirinkti.forEach((pasirinktas) => {
-        pasirinktas.classList.remove("pasirinktas");
-      });
-
-      pasirinkti = [];
-    }
-    pasirinktu_kiekis++;
-    kortele.classList.add("pasirinktas");
-    pasirinkti.push(kortele);
-
-    atspejo();
+    tikrinimas(kortele, index);
   });
 });
 
-function atspejo() {
-  if (pasirinkti.length === 2) {
-    if (
-      pasirinkti[0].classList.toString() === pasirinkti[1].classList.toString()
-    ) {
-      pasirinkti.forEach((pasirinktas) => {
-        pasirinktas.classList.replace("pasirinktas", "atspetas");
-      });
+function tikrinimas(kortele, index) {
+  tekstas.innerText = "";
+
+  if (korteles_info[index].statusas === "nepasirinktas") {
+    korteles_info[index].statusas = "pasirinktas";
+    kortele.classList.add("pasirinktas");
+
+    if (pasirinkti.length === 2) {
+      if (korteles_info[pasirinkti[0]].statusas === "pasirinktas") {
+        korteles_info[pasirinkti[0]].statusas = "nepasirinktas";
+        korteles[pasirinkti[0]].classList.remove("pasirinktas");
+      }
+      if (korteles_info[pasirinkti[1]].statusas === "pasirinktas") {
+        korteles_info[pasirinkti[1]].statusas = "nepasirinktas";
+        korteles[pasirinkti[1]].classList.remove("pasirinktas");
+      }
+      pasirinkti = [];
     }
+
+    pasirinkti.push(index);
+
+    if (pasirinkti.length === 2) {
+      if (
+        korteles_info[pasirinkti[0]].numeris ===
+        korteles_info[pasirinkti[1]].numeris
+      ) {
+        atspejo(pasirinkti[0], pasirinkti[1]);
+      } else {
+        console.log(rezultatas);
+        tekstas.innerText = "Neatspejote!";
+      }
+    }
+
+    slepti();
   }
+}
+
+function atspejo(pirmas, antras) {
+  korteles_info[pirmas].statusas = "atspetas";
+  korteles_info[antras].statusas = "atspetas";
+  rezultatas += 1;
+
+  reiksme.innerText = rezultatas;
+  tekstas.innerText = "Atspejote!";
+
+  if (ar_laimejo()) {
+    tekstas.innerText = "Laimejote!";
+  }
+}
+
+function ar_laimejo() {
+  if (rezultatas === 6) return true;
+  return false;
+}
+
+function slepti() {
+  korteles_info.forEach((kortele, index) => {
+    if (kortele.statusas === "atspetas")
+      setTimeout(() => {
+        korteles[index].classList.remove("pasirinktas");
+        korteles[index].classList.add("atspetas");
+      }, 500);
+  });
 }
