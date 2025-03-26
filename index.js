@@ -5,12 +5,17 @@ let tekstas = document.querySelector("p");
 let reiksme = document.querySelector(".reiksme");
 rezultatas = 0;
 
+let laiko_reiksme = document.querySelector(".laikas");
+let laikas_dabar = 0;
+
 let klases = ["pirmas", "antras", "trecias", "ketvirtas", "penktas", "sestas"];
 
 let korteles_info = [];
 
 let pasirinkti = [];
 let pasirinktu_kiekis = 0;
+
+let prasidejo = false;
 
 function supildyti_korteliu_info() {
   let numeriai = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
@@ -46,6 +51,7 @@ function tikrinimas(kortele, index) {
   tekstas.innerText = "";
 
   if (korteles_info[index].statusas === "nepasirinktas") {
+    prasidejo = true;
     korteles_info[index].statusas = "pasirinktas";
     kortele.classList.add("pasirinktas");
 
@@ -89,6 +95,7 @@ function atspejo(pirmas, antras) {
 
   if (ar_laimejo()) {
     tekstas.innerText = "Laimejote!";
+    prasidejo = false;
   }
 }
 
@@ -106,3 +113,18 @@ function slepti() {
       }, 500);
   });
 }
+
+function naujas_zaidimas() {
+  if (confirm("Žaisti iš naujo?")) {
+    window.location.reload();
+  }
+}
+
+function laikas() {
+  if (prasidejo) {
+    laikas_dabar += 1;
+    laiko_reiksme.innerText = laikas_dabar;
+  }
+}
+
+setInterval(laikas, 1000);

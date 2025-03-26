@@ -5,11 +5,33 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+  background-color: rgb(255, 202, 164);
+}
+
+.container {
+  width: 100%;
+  min-width: 400px;
+  max-width: 650px;
+}
+
+.info {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+button {
+  background-color: rgb(155, 247, 118);
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 10px;
 }
 h1 {
-  margin: auto;
-  margin: 20px;
+  margin: 10px, 0;
 }
 
 .zaidimo_langas {
@@ -17,8 +39,9 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   background-color: grey;
+  border: black solid 2px;
   padding: 10px;
-  width: 650px;
+
   align-items: center;
   justify-content: center;
 }
