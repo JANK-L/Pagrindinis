@@ -1,57 +1,68 @@
-window.addEventListener("DOMContentLoaded", () => renderPosts());
+let korteles = document.querySelectorAll(".kortele");
 
-const container = document.querySelector(".information");
+let klases = ["pirmas", "antras", "trecias", "ketvirtas", "penktas", "sestas"];
 
-const renderPosts = async (term) => {
-  if (!term) return;
-  let uri =
-    "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=0aa8679f7f4cfb9af5b36c2935c1a05d";
-  uri += `&q=${term}`;
+let korteliu_info = [];
 
-  const res = await fetch(uri);
-  const data = await res.json();
-  console.log(data);
-  let template = "";
-  container.innerHTML = template;
+let pasirinkti = [];
+let pasirinktu_kiekis = 0;
 
-  //tikrąją temperatūrą, debesuotumą, drėgnumą ir vėjo greitį.
-  let name = data.name;
-  let temp = String(data.main.temp) + " &deg;C";
-  let weather = data.weather[0].description;
-  let humidity = data.main.humidity + " %";
-  let wind = data.wind.speed + " m/s";
+function supildyti_korteliu_info() {
+  let numeriai = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
 
-  template = `
-  <h2>${name}</h2>
-  <p>Temperatūra: ${temp}</p>
-  <p>${weather} </p>
-  <p>Oro drėgnis: ${humidity} </p>
-  <p>Vėjo greitis: ${wind}</p>`;
+  while (numeriai.length != 0) {
+    let index = Math.floor(Math.random() * numeriai.length);
 
-  container.innerHTML = template;
-  setBackground(name);
-};
+    korteliu_info.push({
+      korteles_nr: numeriai[index],
+      korteles_statusas: "nepasirinktas",
+      korteles_klase: klases[numeriai[index] - 1],
+    });
+    numeriai.splice(index, 1);
+  }
 
-const searchForm = document.querySelector(".search");
+  prideti_klase();
+}
 
-searchForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+function prideti_klase() {
+  for (let index = 0; index < korteles.length; index++) {
+    korteles[index].classList.add(korteliu_info[index].korteles_klase);
+  }
+}
 
-  renderPosts(searchForm.term.value.trim());
+supildyti_korteliu_info();
+
+korteles.forEach((kortele, index) => {
+  kortele.addEventListener("click", () => {
+    if (korteliu_info[index].korteles_statusas != "nepasirinktas") {
+      return;
+    }
+
+    if (pasirinktu_kiekis === 2) {
+      pasirinktu_kiekis = 0;
+
+      pasirinkti.forEach((pasirinktas) => {
+        pasirinktas.classList.remove("pasirinktas");
+      });
+
+      pasirinkti = [];
+    }
+    pasirinktu_kiekis++;
+    kortele.classList.add("pasirinktas");
+    pasirinkti.push(kortele);
+
+    atspejo();
+  });
 });
 
-function setBackground(name) {
-  let backgroundImg = document.body;
-  if (
-    name === "Vilnius" ||
-    name === "Barcelona" ||
-    name === "Panevezys" ||
-    name === "Klaipėda" ||
-    name === "New York" ||
-    name === "Sydney"
-  ) {
-    name = name.split(" ").join("");
-
-    backgroundImg.style.backgroundImage = `url('images/${name}.jpg')`;
-  } else backgroundImg.style.backgroundImage = `url('images/random.jpg')`;
+function atspejo() {
+  if (pasirinkti.length === 2) {
+    if (
+      pasirinkti[0].classList.toString() === pasirinkti[1].classList.toString()
+    ) {
+      pasirinkti.forEach((pasirinktas) => {
+        pasirinktas.classList.replace("pasirinktas", "atspetas");
+      });
+    }
+  }
 }

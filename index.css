@@ -2,43 +2,70 @@ body,
 html {
   padding: 0;
   margin: 0;
-}
-.container {
-  width: 350px;
-  margin: 0 auto;
-  background-size: fill;
-}
-
-.search {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: gray;
-  color: white;
-  padding: 20px;
-  padding-bottom: 30px;
-  margin-top: 50px;
-  gap: 25px;
-
-  border-radius: 10px;
+  gap: 30px;
+}
+h1 {
+  margin: auto;
+  margin: 20px;
 }
 
-.search input,
-.search button {
-  height: 40px;
-  border-radius: 0;
-  border: none;
-  font-size: 16px;
-}
-
-.search * {
-  margin: 0;
-}
-.information {
-  margin-top: 25px;
+.zaidimo_langas {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: grey;
+  padding: 10px;
+  width: 650px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  justify-content: center;
+}
+
+.kortele {
+  border: 2px black solid;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+.pirmas.pasirinktas {
+  background-image: url("images/bear.png");
+}
+.antras.pasirinktas {
+  background-image: url("images/cat.png");
+}
+.trecias.pasirinktas {
+  background-image: url("images/dog.png");
+}
+.ketvirtas.pasirinktas {
+  background-image: url("images/guinea_pig.png");
+}
+.penktas.pasirinktas {
+  background-image: url("images/monkey.png");
+}
+.sestas.pasirinktas {
+  background-image: url("images/octopus.png");
+}
+
+.pirmas.atspetas {
+  background-color: green;
+}
+.antras.atspetas {
+  background-color: green;
+}
+.trecias.atspetas {
+  background-color: green;
+}
+.ketvirtas.atspetas {
+  background-color: green;
+}
+.penktas.atspetas {
+  background-color: green;
+}
+.sestas.atspetas {
+  background-color: green;
 }
