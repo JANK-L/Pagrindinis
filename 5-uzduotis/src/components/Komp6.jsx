@@ -16,7 +16,7 @@ const Komp6 = () => {
         {temperaturos.map((temperatura, index) => (
           <tr>
             <th>{index + 1}</th>
-            <th>{temperatura}</th>
+            <th>{temperatura} &deg;C</th>
           </tr>
         ))}
       </table>
