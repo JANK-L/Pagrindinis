@@ -4,7 +4,9 @@ import GeriausiasMedis from "./components/GeriausiasMedis";
 import Laimejimas from "./components/Laimejimas";
 import AtvirkstinisTekstas from "./components/Papildomi/AtvirkstinisTekstas";
 import CapsLockIspejimas from "./components/Papildomi/CapsLockIspejimas";
+import MygtukoSpalva from "./components/Papildomi/MygtukoSpalva";
 import PaspaudimuSkaiciuokle from "./components/Papildomi/PaspaudimuSkaiciuokle";
+import RaidziuFiltras from "./components/Papildomi/RaidziuFiltras";
 import SimboliuSkaicius from "./components/Papildomi/SimboliuSkaicius";
 import Skaiciuotuvas from "./components/Papildomi/Skaiciuotuvas";
 import SlaptazodzioRodymas from "./components/Papildomi/SlaptazodzioRodymas";
@@ -39,6 +41,10 @@ function App() {
       <AtvirkstinisTekstas />
       <hr />
       <SlaptazodzioRodymas />
+      <hr />
+      <RaidziuFiltras />
+      <hr />
+      <MygtukoSpalva />
     </>
   );
 }
