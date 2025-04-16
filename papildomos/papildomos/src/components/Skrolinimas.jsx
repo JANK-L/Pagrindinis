@@ -13,11 +13,11 @@ const Skrolinimas = () => {
     setPozicija(event.target.scrollTop);
     console.log(pozicijaRef, pozicija);
 
-    if (pozicija - pozicijaRef > 200) {
+    if (pozicija > 200 && pozicijaRef == 0) {
       setPozicijaRef(pozicija);
       alert("nuslinkai toli");
-    } else if (pozicija - pozicijaRef < 0) {
-      setPozicijaRef(pozicija);
+    } else if (pozicija < 200) {
+      setPozicijaRef(0);
     }
   };
   return (
