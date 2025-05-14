@@ -1,0 +1,30 @@
+header {
+  background: url("./src/assets/Header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 156px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+
+  color: #ffffff;
+}
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+}
