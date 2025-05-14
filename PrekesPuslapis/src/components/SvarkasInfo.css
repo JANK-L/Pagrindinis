@@ -1,0 +1,76 @@
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  color: #252525;
+
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #666666;
+
+  margin: 0;
+}
+
+p.aprasymas {
+  max-width: 536px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #252525;
+}
+
+h3 {
+  width: 200px;
+  height: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #252525;
+  margin-top: 48px;
+
+  background: #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(255, 222, 50, 1) 43%,
+    rgba(255, 222, 50, 1) 100%
+  );
+}
+
+span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #252525;
+}
+
+.produktoInfo {
+  margin-bottom: 48px;
+}

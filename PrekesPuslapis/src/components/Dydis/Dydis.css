@@ -1,0 +1,29 @@
+.dydziai {
+  display: flex;
+  gap: 9px;
+
+  margin-top: 5px;
+  margin-bottom: 32px;
+}
+.dydziai .dydis {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 4px 16px;
+  gap: 10px;
+
+  min-width: 73px;
+  min-height: 28px;
+
+  border: 1px solid #666666;
+  border-radius: 25px;
+}
+
+.dydziai .dydis.pasirinktas {
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #252525;
+}
