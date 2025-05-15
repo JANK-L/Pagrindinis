@@ -1,0 +1,17 @@
+div.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.main > * {
+    width: 50%; 
+    
+    
+}
+
+.main > :first-child{
+    background-color: #FDF7D8;
+    margin-right: 64px;
+}
