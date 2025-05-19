@@ -3,10 +3,10 @@ import "./Dydis.css";
 
 const Dydis = (props) => {
   let dydziai = [
-    { pavadinimas: "S", aprasymas: "S (36)", kaina: 19.99 },
-    { pavadinimas: "M", aprasymas: "M (38)", kaina: 29.99 },
-    { pavadinimas: "L", aprasymas: "L (40/42)", kaina: 32.99 },
-    { pavadinimas: "XL", aprasymas: "XL (44)", kaina: 39.99 },
+    { pavadinimas: "S", aprasymas: "S (36)", kaina: 19.99, kiekis: 1 },
+    { pavadinimas: "M", aprasymas: "M (38)", kaina: 29.99, kiekis: 1 },
+    { pavadinimas: "L", aprasymas: "L (40/42)", kaina: 32.99, kiekis: 0 },
+    { pavadinimas: "XL", aprasymas: "XL (44)", kaina: 39.99, kiekis: -1 },
   ];
 
   useEffect(() => {
@@ -26,15 +26,23 @@ const Dydis = (props) => {
       </p>
       <div className="dydziai">
         {dydziai.map((dydis, i) => (
-          <div
+          <button
             key={i}
-            className={"dydis " + (pasirinktas === i ? "pasirinktas" : "")}
+            className={
+              "dydis " +
+              (pasirinktas === i ? "pasirinktas " : "") +
+              (dydis.kiekis === -1 ? "nera " : "")
+            }
+            disabled={dydis.kiekis === -1 ? true : false}
             onClick={() => naujaKaina(i)}
           >
             {dydis.aprasymas}
-          </div>
+          </button>
         ))}
       </div>
+      {dydziai[pasirinktas].kiekis === 0 && (
+        <p className="paskutinis">Paskutiniai vienetai</p>
+      )}
     </div>
   );
 };

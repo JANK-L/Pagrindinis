@@ -5,8 +5,12 @@ import SvarkasInfo from "./components/SvarkasInfo";
 function App() {
   return (
     <div className="main">
-      <Galerija className="left" />
-      <SvarkasInfo className="right" />
+      <div className="left">
+        <Galerija />
+      </div>
+      <div className="right">
+        <SvarkasInfo />
+      </div>
     </div>
   );
 }

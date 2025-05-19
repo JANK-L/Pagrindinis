@@ -1,17 +1,20 @@
-div.main{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  /*background-color: #fdf7d8;*/
 }
 
-.main > * {
-    width: 50%; 
-    
-    
+.main > .left {
+  background-color: #fdf7d8;
+  flex: 1 1 45%;
+  max-width: 45%;
 }
 
-.main > :first-child{
-    background-color: #FDF7D8;
-    margin-right: 64px;
+.main > .right {
+  padding-left: 64px;
+  background-color: white;
+  flex: 1 1 45%;
+  width: calc(45% - 64px);
 }

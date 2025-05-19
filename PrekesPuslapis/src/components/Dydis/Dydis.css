@@ -3,7 +3,6 @@
   gap: 9px;
 
   margin-top: 5px;
-  margin-bottom: 32px;
 }
 .dydziai .dydis {
   box-sizing: border-box;
@@ -16,15 +15,37 @@
   padding: 4px 16px;
   gap: 10px;
 
+  background-color: white;
   min-width: 73px;
   min-height: 28px;
 
   border: 1px solid #666666;
   border-radius: 25px;
   cursor: pointer;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #252525;
 }
 
 .dydziai .dydis.pasirinktas {
   background: rgba(255, 255, 255, 0.7);
   border: 3px solid #252525;
+}
+
+.dydziai .dydis.nera {
+  border: solid 1px #6666664d;
+  color: rgba(37, 37, 37, 0.3);
+}
+
+.paskutinis {
+  color: #c61e1e;
 }
